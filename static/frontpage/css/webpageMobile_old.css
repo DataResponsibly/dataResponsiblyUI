@@ -1,0 +1,1270 @@
+/* 
+Jacob Burke
+May 13, 2018
+CSS for ranking Facts data upload and landing page
+*/
+
+@font-face {
+  font-family: "ProximaNova-Semibold";
+  src: url('../fonts/ProximaNova-Sbold.otf') format("opentype");
+}
+@font-face {
+  font-family: "ProximaNova-Regular";
+  src: url('../fonts/ProximaNova-Reg.otf') format("opentype");
+}
+@font-face {
+  font-family: "ProximaNova-Light";
+  src: url('../fonts/ProximaNova-Light.otf') format("opentype");
+}
+@font-face {
+  font-family: "ProximaNova-Bold";
+  src: url('../fonts/ProximaNova-Bold.otf') format("opentype");
+}
+
+.webpage-mobile {
+  width               : 100%;
+  min-width           : 375px;
+  height              : 100vh;
+  min-height          : 4150px;
+  position            : relative;
+  overflow            : hidden;
+  margin              : 0px;
+  background-color    : rgba(255, 255, 255, 1.0);
+}
+a {
+  text-decoration     : none;
+}
+div {
+  -webkit-text-size-adjust: none;
+}
+.webpage-mobile .group16 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 328px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.webpage-mobile .group16-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 35px;
+  align-items         : center;
+  height              : 561px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.webpage-mobile .group16 .group11 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 8px;
+  height              : 15px;
+  width               : 97px;
+  position            : absolute;
+  margin              : 0;
+  left                : 230px;
+}
+.webpage-mobile .group16 .group11 .about {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 40px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "ProximaNova-Regular", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : left;
+  letter-spacing      : 1.24px;
+  line-height         : 15.0px;
+}
+.webpage-mobile .group16 .group11 .contact {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 51px;
+  position            : absolute;
+  margin              : 0;
+  left                : 47px;
+  font-family         : "ProximaNova-Regular", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : left;
+  letter-spacing      : 1.24px;
+  line-height         : 15.0px;
+}
+.webpage-mobile .group16 .group8 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 30px;
+  width               : 174px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.webpage-mobile .group16 .group8 .group19 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 4px;
+  height              : 24px;
+  width               : 136px;
+  position            : absolute;
+  margin              : 0;
+  left                : 38px;
+}
+.webpage-mobile .group16 .group8 .group19 .ranking {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 125px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 24.0px;
+}
+.webpage-mobile .group16 .group8 .group19 .facts {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 62px;
+  position            : absolute;
+  margin              : 0;
+  left                : 74px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(40, 142, 248, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 24.0px;
+}
+.webpage-mobile .group16 .group8 .group7 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 30px;
+  width               : 30px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.webpage-mobile .group16 .group8 .group7 .rectangle2 {
+  background-color    : rgba(40, 142, 248, 1.0);
+  top                 : 0px;
+  height              : 30px;
+  width               : 30px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  border-radius       : 6px;
+}
+.webpage-mobile .group16 .group8 .group7 .i-con {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 11px;
+  height              : auto;
+  width               : 24px;
+  position            : absolute;
+  margin              : 0;
+  left                : 6px;
+  font-family         : "ProximaNova-Regular", Helvetica, Arial, serif;
+  font-size           : 8.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 9.0px;
+}
+.webpage-mobile .group16 .nutritional-labels-f {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 149px;
+  height              : auto;
+  width               : 329px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 32.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 58.0px;
+}
+.webpage-mobile .group16 .ranking-facts-genera {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 294px;
+  height              : auto;
+  width               : 329px;
+  position            : absolute;
+  margin              : 0;
+  left                : 1px;
+  font-family         : "ProximaNova-Light", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 22.0px;
+}
+.webpage-mobile .group16 .group9 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 444px;
+  height              : 73px;
+  width               : 327px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.webpage-mobile .group16 .group9 .rectangle3 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 73px;
+  width               : 327px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.webpage-mobile .group16 .group9 .get-started {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 23px;
+  height              : auto;
+  width               : 252px;
+  position            : absolute;
+  margin              : 0;
+  left                : 37px;
+  font-family         : "ProximaNova-Bold", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  letter-spacing      : 1.59px;
+  line-height         : 22.0px;
+}
+.webpage-mobile .group17 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 387px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.webpage-mobile .group17-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 865px;
+  align-items         : center;
+  height              : 541px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.webpage-mobile .group17 .adding-fairness-sta {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 329px;
+  position            : absolute;
+  margin              : 0;
+  left                : 30px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 30.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 37.0px;
+}
+.webpage-mobile .group17 .ranking-your-facts-i {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 122px;
+  height              : auto;
+  width               : 329px;
+  position            : absolute;
+  margin              : 0;
+  left                : 31px;
+  font-family         : "ProximaNova-Light", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 30.0px;
+}
+.webpage-mobile .group17 .group10 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 314px;
+  height              : 227px;
+  width               : 387px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.webpage-mobile .group17 .group10 .rectangle11 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 227px;
+  width               : 387px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.webpage-mobile .group17 .group10 .group2 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 71px;
+  height              : 79px;
+  width               : 79px;
+  position            : absolute;
+  margin              : 0;
+  left                : 155px;
+}
+.webpage-mobile .group17 .group10 .group2 .oval {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 79px;
+  width               : 79px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.webpage-mobile .group17 .group10 .group2 .stroke660 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 30px;
+  height              : 18px;
+  width               : 18px;
+  position            : absolute;
+  margin              : 0;
+  left                : 32px;
+  opacity             : 0.9;
+}
+.webpage-mobile .group17 .group10 .group2 .stroke660 .stroke6601 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 18px;
+  width               : 18px;
+  position            : relative;
+  margin              : 0;
+  left                : 0px;
+}
+.webpage-mobile .group17 .group10 .group2 .oval2 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 19px;
+  height              : 36px;
+  width               : 36px;
+  position            : absolute;
+  margin              : 0;
+  left                : 19px;
+  opacity             : 0.9;
+}
+.webpage-mobile .group18 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 353px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.webpage-mobile .group18-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 1466px;
+  align-items         : center;
+  height              : 1578px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.webpage-mobile .group18 .group20 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 353px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.webpage-mobile .group18 .group20 .get-there-in3-simple-steps {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 159px;
+  position            : absolute;
+  margin              : 0;
+  left                : -1px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 30.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.34px;
+  line-height         : 37.0px;
+}
+.webpage-mobile .group18 .group20 .a3-simple-steps {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 198px;
+  position            : absolute;
+  margin              : 0;
+  left                : 156px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 30.0px;
+  color               : rgba(40, 142, 248, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.34px;
+  line-height         : 37.0px;
+}
+.webpage-mobile .group18 .group4 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 67px;
+  height              : 467px;
+  width               : 339px;
+  position            : absolute;
+  margin              : 0;
+  left                : 7px;
+}
+.webpage-mobile .group18 .group4 .rectangle12 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 466px;
+  width               : 339px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.webpage-mobile .group18 .group4 .group6 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 74px;
+  height              : 132px;
+  width               : 123px;
+  position            : absolute;
+  margin              : 0;
+  left                : 108px;
+}
+.webpage-mobile .group18 .group4 .group6 .fill2632 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 26px;
+  height              : 63px;
+  width               : 124px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.webpage-mobile .group18 .group4 .group6 .fill2633 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 23px;
+  width               : 124px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.webpage-mobile .group18 .group4 .group6 .fill2634 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 43px;
+  height              : 89px;
+  width               : 50px;
+  position            : absolute;
+  margin              : 0;
+  left                : 34px;
+}
+.webpage-mobile .group18 .group4 .oval3-copy2 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 36px;
+  height              : 208px;
+  width               : 208px;
+  position            : absolute;
+  margin              : 0;
+  left                : 66px;
+}
+.webpage-mobile .group18 .group4 .upload-your-data {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 268px;
+  height              : auto;
+  width               : 216px;
+  position            : absolute;
+  margin              : 0;
+  left                : 61px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 32.0px;
+}
+.webpage-mobile .group18 .group4 .smoothly-easy-uploa {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 323px;
+  height              : auto;
+  width               : 216px;
+  position            : absolute;
+  margin              : 0;
+  left                : 61px;
+  font-family         : "ProximaNova-Light", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 30.0px;
+}
+.webpage-mobile .group18 .group12 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 585px;
+  height              : 467px;
+  width               : 339px;
+  position            : absolute;
+  margin              : 0;
+  left                : 7px;
+}
+.webpage-mobile .group18 .group12 .rectangle12-copy {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 466px;
+  width               : 339px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.webpage-mobile .group18 .group12 .group5 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 74px;
+  height              : 132px;
+  width               : 132px;
+  position            : absolute;
+  margin              : 0;
+  left                : 104px;
+}
+.webpage-mobile .group18 .group12 .group5 .fill2134 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 132px;
+  width               : 106px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.webpage-mobile .group18 .group12 .group5 .fill2135 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 30px;
+  height              : 61px;
+  width               : 32px;
+  position            : absolute;
+  margin              : 0;
+  left                : 100px;
+}
+.webpage-mobile .group18 .group12 .group5 .fill2136 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 117px;
+  height              : 15px;
+  width               : 23px;
+  position            : absolute;
+  margin              : 0;
+  left                : 109px;
+}
+.webpage-mobile .group18 .group12 .group5 .fill2137 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 82px;
+  height              : 33px;
+  width               : 23px;
+  position            : absolute;
+  margin              : 0;
+  left                : 109px;
+}
+.webpage-mobile .group18 .group12 .oval3 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 36px;
+  height              : 208px;
+  width               : 208px;
+  position            : absolute;
+  margin              : 0;
+  left                : 66px;
+}
+.webpage-mobile .group18 .group12 .set-your-parameters {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 268px;
+  height              : auto;
+  width               : 254px;
+  position            : absolute;
+  margin              : 0;
+  left                : 42px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 32.0px;
+}
+.webpage-mobile .group18 .group12 .add-in-the-data-you {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 323px;
+  height              : auto;
+  width               : 216px;
+  position            : absolute;
+  margin              : 0;
+  left                : 59px;
+  font-family         : "ProximaNova-Light", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 30.0px;
+}
+.webpage-mobile .group18 .group13 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 1108px;
+  height              : 467px;
+  width               : 339px;
+  position            : absolute;
+  margin              : 0;
+  left                : 7px;
+}
+.webpage-mobile .group18 .group13 .rectangle12-copy2 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 466px;
+  width               : 339px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.webpage-mobile .group18 .group13 .group41 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 74px;
+  height              : 132px;
+  width               : 101px;
+  position            : absolute;
+  margin              : 0;
+  left                : 120px;
+}
+.webpage-mobile .group18 .group13 .group41 .fill4886 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 17px;
+  height              : 115px;
+  width               : 102px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.webpage-mobile .group18 .group13 .group41 .fill4887 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 36px;
+  width               : 50px;
+  position            : absolute;
+  margin              : 0;
+  left                : 26px;
+}
+.webpage-mobile .group18 .group13 .oval3-copy {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 36px;
+  height              : 208px;
+  width               : 208px;
+  position            : absolute;
+  margin              : 0;
+  left                : 66px;
+}
+.webpage-mobile .group18 .group13 .check-your-facts {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 268px;
+  height              : auto;
+  width               : 199px;
+  position            : absolute;
+  margin              : 0;
+  left                : 70px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 32.0px;
+}
+.webpage-mobile .group18 .group13 .analyze-the-results {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 323px;
+  height              : auto;
+  width               : 216px;
+  position            : absolute;
+  margin              : 0;
+  left                : 61px;
+  font-family         : "ProximaNova-Light", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 30.0px;
+}
+.webpage-mobile .group22 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 522px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.webpage-mobile .group22-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 3212px;
+  align-items         : center;
+  height              : 336px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.webpage-mobile .group22 .rectangle4 {
+  background-color    : rgba(40, 142, 248, 1.0);
+  top                 : 0px;
+  height              : 336px;
+  width               : 522px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.webpage-mobile .group22 .group14 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 244px;
+  height              : 56px;
+  width               : 184px;
+  position            : absolute;
+  margin              : 0;
+  left                : 170px;
+}
+.webpage-mobile .group22 .group14 .rectangle3-copy {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 56px;
+  width               : 184px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  border-radius       : 8px;
+  border-style        : solid;
+  border-width        : 3px;
+  border-color        : rgba(255, 255, 255, 1.0);
+}
+.webpage-mobile .group22 .group14 .contact-us {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 21px;
+  height              : auto;
+  width               : 147px;
+  position            : absolute;
+  margin              : 0;
+  left                : 18px;
+  font-family         : "ProximaNova-Bold", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  letter-spacing      : 1.11px;
+  line-height         : 17.0px;
+}
+.webpage-mobile .group22 .group15 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 149px;
+  height              : 61px;
+  width               : 184px;
+  position            : absolute;
+  margin              : 0;
+  left                : 170px;
+}
+.webpage-mobile .group22 .group15 .rectangle31 {
+  background-color    : rgba(255, 255, 255, 1.0);
+  top                 : 0px;
+  height              : 61px;
+  width               : 184px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  border-radius       : 8px;
+}
+.webpage-mobile .group22 .group15 .get-started1 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 22px;
+  height              : auto;
+  width               : 147px;
+  position            : absolute;
+  margin              : 0;
+  left                : 18px;
+  font-family         : "ProximaNova-Bold", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(40, 142, 248, 1.0);
+  text-align          : center;
+  letter-spacing      : 1.11px;
+  line-height         : 17.0px;
+}
+.webpage-mobile .group22 .upload-or-data-now-o {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 79px;
+  height              : auto;
+  width               : 329px;
+  position            : absolute;
+  margin              : 0;
+  left                : 97px;
+  font-family         : "ProximaNova-Regular", Helvetica, Arial, serif;
+  font-size           : 15.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 24.0px;
+}
+.webpage-mobile .group22 .ready-to-begin {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 36px;
+  height              : auto;
+  width               : 524px;
+  position            : absolute;
+  margin              : 0;
+  left                : -1px;
+  font-family         : "ProximaNova-Bold", Helvetica, Arial, serif;
+  font-size           : 30.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.34px;
+  line-height         : 37.0px;
+}
+.webpage-mobile .group23 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 331px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.webpage-mobile .group23-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 3629px;
+  align-items         : center;
+  height              : 353px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.webpage-mobile .group23 .group21 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 22px;
+  width               : 156px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.webpage-mobile .group23 .group21 .ranking1 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 156px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(98, 101, 114, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 22.0px;
+}
+.webpage-mobile .group23 .group21 .facts1 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 62px;
+  position            : absolute;
+  margin              : 0;
+  left                : 67px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(40, 142, 248, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 22.0px;
+}
+.webpage-mobile .group23 .headerlogo {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 31px;
+  height              : 27px;
+  width               : 137px;
+  position            : absolute;
+  margin              : 0;
+  left                : 164px;
+}
+.webpage-mobile .group23 .a-project-by {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 4px;
+  height              : auto;
+  width               : 63px;
+  position            : absolute;
+  margin              : 0;
+  left                : 164px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(216, 217, 220, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 15.0px;
+}
+.webpage-mobile .group23 .more-info {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 94px;
+  height              : auto;
+  width               : 63px;
+  position            : absolute;
+  margin              : 0;
+  left                : 1px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(216, 217, 220, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 15.0px;
+}
+.webpage-mobile .group23 .contact-us1 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 94px;
+  height              : auto;
+  width               : 63px;
+  position            : absolute;
+  margin              : 0;
+  left                : 164px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(216, 217, 220, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 15.0px;
+}
+.webpage-mobile .group23 .home-about-learning {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 110px;
+  height              : auto;
+  width               : 153px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "ProximaNova-Regular", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 24.0px;
+}
+.webpage-mobile .group23 .rectangle32 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 143px;
+  height              : 58px;
+  width               : 170px;
+  position            : absolute;
+  margin              : 0;
+  left                : 161px;
+}
+.webpage-mobile .group23 .rectangle3-copy2 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 257px;
+  height              : 58px;
+  width               : 170px;
+  position            : absolute;
+  margin              : 0;
+  left                : 158px;
+}
+.webpage-mobile .group23 .get-in-touch {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 162px;
+  height              : auto;
+  width               : 121px;
+  position            : absolute;
+  margin              : 0;
+  left                : 186px;
+  font-family         : "ProximaNova-Bold", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  letter-spacing      : 1.59px;
+  line-height         : 15.0px;
+}
+.webpage-mobile .group23 .drop-us-a-message {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 274px;
+  height              : auto;
+  width               : 136px;
+  position            : absolute;
+  margin              : 0;
+  left                : 175px;
+  font-family         : "ProximaNova-Bold", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  letter-spacing      : 1.59px;
+  line-height         : 15.0px;
+}
+.webpage-mobile .group23 .bumped-into-issues {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 116px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 165px;
+  font-family         : "ProximaNova-Regular", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 17.0px;
+}
+.webpage-mobile .group23 .any-feedback-or-gene {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 212px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 165px;
+  font-family         : "ProximaNova-Regular", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 18.0px;
+}
+.webpage-mobile .group23 .githubsquare {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 212px;
+  height              : 28px;
+  width               : 28px;
+  position            : absolute;
+  margin              : 0;
+  left                : 165px;
+}
+.webpage-mobile .group23 .githubsquare .githubsquare1 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 28px;
+  width               : 28px;
+  position            : relative;
+  margin              : 0;
+  left                : 0px;
+}
+.webpage-mobile .group23 .twittersquare {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 324px;
+  height              : 28px;
+  width               : 28px;
+  position            : absolute;
+  margin              : 0;
+  left                : 208px;
+}
+.webpage-mobile .group23 .twittersquare .twittersquare1 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 28px;
+  width               : 28px;
+  position            : relative;
+  margin              : 0;
+  left                : 0px;
+}
+.webpage-mobile .group151 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 385px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.webpage-mobile .group151-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 4046px;
+  align-items         : center;
+  height              : 214px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.webpage-mobile .group151 .oval9 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 49px;
+  height              : 8px;
+  width               : 9px;
+  position            : absolute;
+  margin              : 0;
+  left                : 15px;
+}
+.webpage-mobile .group151 .oval4 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 49px;
+  height              : 151px;
+  width               : 150px;
+  position            : absolute;
+  margin              : 0;
+  left                : 235px;
+}
+.webpage-mobile .group151 .oval7 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 66px;
+  height              : 84px;
+  width               : 83px;
+  position            : absolute;
+  margin              : 0;
+  left                : 76px;
+}
+.webpage-mobile .group151 .oval6 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 56px;
+  height              : 92px;
+  width               : 90px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.webpage-mobile .group151 .oval5 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 72px;
+  height              : 142px;
+  width               : 140px;
+  position            : absolute;
+  margin              : 0;
+  left                : 134px;
+}
+.webpage-mobile .group151 .oval8 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 46px;
+  height              : 24px;
+  width               : 25px;
+  position            : absolute;
+  margin              : 0;
+  left                : 265px;
+}
+.webpage-mobile .group151 .oval9-copy {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 37px;
+  height              : 8px;
+  width               : 9px;
+  position            : absolute;
+  margin              : 0;
+  left                : 5px;
+}
+.webpage-mobile .group151 .oval9-copy2 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 26px;
+  height              : 8px;
+  width               : 9px;
+  position            : absolute;
+  margin              : 0;
+  left                : 19px;
+}
+.webpage-mobile .group151 .oval9-copy3 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 11px;
+  height              : 8px;
+  width               : 9px;
+  position            : absolute;
+  margin              : 0;
+  left                : 10px;
+}
+.webpage-mobile .group151 .oval9-copy4 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 8px;
+  width               : 9px;
+  position            : absolute;
+  margin              : 0;
+  left                : 23px;
+}
+.webpage-mobile .group3 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 338px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.webpage-mobile .group3-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 600px;
+  align-items         : center;
+  height              : 213px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+/* .animate-appear prefix for appear animations */
+.animate-appear {
+  opacity             : 0;
+  display             : block;
+  -webkit-animation   : reveal 0.3s ease-in-out 1 normal forwards;
+  -moz-animation      : reveal 0.3s ease-in 1 normal forwards;
+  -o-animation        : reveal 0.3s ease-in-out 1 normal forwards;
+  animation           : reveal 0.3s ease-in-out 1 normal forwards;
+}
+.animate-disappear {
+  opacity             : 1;
+  display             : block;
+  -webkit-animation   : reveal 0.3s ease-in-out 1 reverse forwards;
+  -moz-animation      : reveal 0.3s ease-in 1 normal forwards;
+  -o-animation        : reveal 0.3s ease-in-out 1 reverse forwards;
+  animation           : reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.animate-nodelay {
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay  : 0;
+  animation-delay     : 0;
+}
+@-webkit-keyframes reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@-moz-keyframes reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@-o-keyframes reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@keyframes reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}

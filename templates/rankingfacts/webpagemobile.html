@@ -1,0 +1,350 @@
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport"/>
+        <link href="{% static 'icons/frontpage/favicon.ico' %}" rel="shortcut icon"/>
+
+        <link href="{% static 'frontpage/css/webpageMobile.css' %}" rel="stylesheet" type="text/css"/>
+        <!-- Bootstrap Core CSS -->
+        <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+        <!-- jQuery -->
+        <script src="{% static 'jquery/jquery-3.2.1.min.js' %}"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js">
+        </script>
+
+    </head>
+    <body style="margin: 0;
+ background: rgba(255, 255, 255, 1.0);">
+        <input id="anPageName" name="page" type="hidden" value="webpagemobile"/>
+        <div class="webpage-mobile">
+            <div class="group16-layout-container">
+                <div class="group16" id="group16">
+                    <div class="group11">
+                        <a href="https://dataresponsibly.github.io/">
+                        <div class="about">
+                            About
+                        </div>
+                        </a>
+                        <a href="https://dataresponsibly.github.io/people/">
+                        <div class="contact">
+                            Contact
+                        </div>
+                        </a>
+                    </div>
+                    <a href="#group16">
+                        <div class="group8">
+                            <div class="group19">
+                                <div class="ranking">
+                                    Ranking
+                                </div>
+                                <div class="facts">
+                                    Facts
+                                </div>
+                            </div>
+                            <div class="group7">
+                                <div class="rectangle2">
+                                </div>
+                                <div class="i-con">
+                                    ICON
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="nutritional-labels-f">
+                        Nutritional Labels for Rankings
+                    </div>
+                    <div class="ranking-facts-genera">
+                        Ranking Facts is a standardized, human-interpretable summary of the ranking methodology and of its result.
+                        <br/>
+                        <br/>
+                    </div>
+                    <a href="{% url 'rankingfacts:upload_data' %}">
+                        <div class="group9">
+                            <img src="{% static 'images/frontpage/webpage-mobilerectangle-3.png' %}" class="rectangle3" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                            <div class="get-started">
+                                GET STARTED
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="group17-layout-container">
+                <div class="group17" id="None">
+                    <div class="adding-fairness-sta">
+                        Making rankings transparent and interpretable
+                    </div>
+                    <div class="ranking-your-facts-i">
+                        Ranked lists are ubiquitous: We rank job applicants, search results, grant proposals, or construction bids, to prioritize them based on some notion of quality.  A ranking can be the result of a seemingly simple process - compute the score of each item using a formula and then sort items on the score - or of a complex machine learning method.  Whether the ranking methodology is simple or complex, its result can be difficult to interpret. Ranking Facts uses a “nutritional label” metaphor to present a standardized, human-interpretable summary of the ranking methodology and of its result.
+                    </div>
+                    <div class="group10">
+{#                        <img src="{% static 'images/frontpage/webpage-mobilerectangle-11--1.png' %}" class="rectangle11" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>#}
+{#                        <div class="group2">#}
+{#                            <img src="{% static 'images/frontpage/webpage-mobileoval--1.png' %}" class="oval" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>#}
+{#                            <div class="stroke660">#}
+{#                                <img src="{% static 'images/frontpage/webpage-mobilestroke-660.png' %}" class="stroke6601" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>#}
+{#                            </div>#}
+{#                            <img src="{% static 'images/frontpage/webpage-mobileoval-2.png' %}" class="oval2" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>#}
+{#                        </div>#}
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mtPBxJbWDKQ?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group18-layout-container">
+                <div class="group18">
+                    <div class="group20">
+                        <div class="get-there-in3-simple-steps">
+                            Get there in
+                        </div>
+                        <div class="a3-simple-steps">
+                            3 simple steps
+                        </div>
+                    </div>
+                    <div class="group4">
+                        <img src="{% static 'images/frontpage/webpage-mobilerectangle-12-copy-2.png' %}" class="rectangle12" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                        <div class="group6">
+                            <img src="{% static 'images/frontpage/webpage-mobilefill-2632.png' %}" class="fill2632" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                            <img src="{% static 'images/frontpage/webpage-mobilefill-2633.png' %}" class="fill2633" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                            <img src="{% static 'images/frontpage/webpage-mobilefill-2634--1.png' %}" class="fill2634" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                        </div>
+                        <img src="{% static 'images/frontpage/webpage-mobileoval-3-copy-2.png' %}" class="oval3-copy2" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                        <div class="upload-your-data">
+                            Load your data
+                        </div>
+                        <div class="smoothly-easy-uploa">
+                            Upload a comma-separated (CVS) file with one item per line.
+                        </div>
+                    </div>
+                    <div class="group12">
+                        <img src="{% static 'images/frontpage/webpage-mobilerectangle-12-copy-2.png' %}" class="rectangle12-copy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                        <div class="group5">
+                            <img src="{% static 'images/frontpage/webpage-mobilefill-2134.png' %}" class="fill2134" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                            <img src="{% static 'images/frontpage/webpage-mobilefill-2135.png' %}" class="fill2135" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                            <img src="{% static 'images/frontpage/webpage-mobilefill-2136--1.png' %}" class="fill2136" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                            <img src="{% static 'images/frontpage/webpage-mobilefill-2137.png' %}" class="fill2137" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                        </div>
+                        <img src="{% static 'images/frontpage/webpage-mobileoval-3.png' %}" class="oval3" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                        <div class="set-your-parameters">
+                            Design the Methodology
+                        </div>
+                        <div class="add-in-the-data-you">
+                            Visualize and optionally post-process your data, and design a score-based ranking methodology
+                        </div>
+                    </div>
+                    <div class="group13">
+                        <img src="{% static 'images/frontpage/webpage-mobilerectangle-12-copy-2.png' %}" class="rectangle12-copy2" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                        <div class="group41">
+                            <img src="{% static 'images/frontpage/webpage-mobilefill-4886--1.png' %}" class="fill4886" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                            <img src="{% static 'images/frontpage/webpage-mobilefill-4887--1.png' %}" class="fill4887" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                        </div>
+                        <img src="{% static 'images/frontpage/webpage-mobileoval-3-copy--1.png' %}" class="oval3-copy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                        <div class="check-your-facts">
+                            Check your Ranking Facts
+                        </div>
+                        <div class="analyze-the-results">
+                            Inspect the nutritional label to understand the effect of the ranking methodology on the result.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group22-layout-container">
+                <div class="group22">
+                    <div class="rectangle4">
+                    </div>
+                    <a href="https://dataresponsibly.github.io/people/">
+                    <div class="group14">
+                        <div class="rectangle3-copy">
+                        </div>
+                        <div class="contact-us">
+                            CONTACT US
+                        </div>
+                    </div>
+                    </a>
+                    <a href="{% url 'rankingfacts:upload_data' %}">
+                        <div class="group15">
+                            <div class="rectangle31">
+                            </div>
+                            <div class="get-started1">
+                                GET STARTED
+                            </div>
+                        </div>
+                    </a>
+                    <div class="upload-or-data-now-o">
+                        Upload your data now or contact us if you have a question or some feedbacks
+                    </div>
+                    <div class="ready-to-begin">
+                        Ready to begin?
+                    </div>
+                </div>
+            </div>
+            <div class="group23-layout-container">
+                <div class="group23">
+                    <div class="group21">
+                        <div class="ranking1">
+                            Ranking
+                        </div>
+                        <div class="facts1">
+                            Facts
+                        </div>
+                    </div>
+                    <img src="{% static 'images/frontpage/webpage-tabletheaderlogo.png' %}" class="headerlogo" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                    <div class="a-project-by">
+                        A project by
+                    </div>
+                    <a href="https://dataresponsibly.github.io/">
+                    <div class="more-info">
+                        More Info
+                    </div>
+                    </a>
+                    <a href="https://dataresponsibly.github.io/people/">
+                    <div class="contact-us1">
+                        Contact us
+                    </div>
+                    </a>
+                    <div class="home-about-learning">
+                        <a href="{% url 'rankingfacts:base' %}">
+                        Home
+                        </a>
+                        <br/>
+                        <a href="https://dataresponsibly.github.io/">
+                        About
+                        </a>
+                        <br/>
+                        <a href="https://dataresponsibly.github.io/publications/">
+                        Research
+                        </a>
+                        <br/>
+                        <a href="https://github.com/DataResponsibly/RankingFacts">
+                        Code
+                        </a>
+                    </div>
+                    <a href="https://dataresponsibly.github.io/people/">
+                    <img src="{% static 'images/frontpage/webpagerectangle-3.png' %}" class="rectangle32" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+{#                    <img src="{% static 'images/frontpage/webpagerectangle-3.png' %}" class="rectangle3-copy2" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>#}
+                    <div class="get-in-touch">
+                        Get in touch
+                    </div>
+                    </a>
+{#                    <div class="drop-us-a-message">#}
+{#                        Drop us a message#}
+{#                    </div>#}
+                    <div class="bumped-into-issues">
+                        Bumped into issues?
+                    </div>
+{#                    <div class="any-feedback-or-gene">#}
+{#                        Any feedback or general#}
+{#                        <br/>#}
+{#                        question?#}
+{#                    </div>#}
+                    <a href="https://github.com/DataResponsibly/RankingFacts">
+                    <div class="githubsquare">
+                        <img src="{% static 'images/frontpage/webpage-mobile-githubsquare.png' %}" class="githubsquare1" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                    </div>
+                    </a>
+{#                    <div class="twittersquare">#}
+{#                        <img src="{% static 'images/frontpage/webpage-mobile-twittersquare.png' %}" class="twittersquare1" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>#}
+{#                    </div>#}
+                </div>
+            </div>
+            <div class="group151-layout-container">
+                <div class="group151">
+                    <img src="{% static 'images/frontpage/webpage-mobileoval-9-copy--1.png' %}" class="oval9" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                    <img src="{% static 'images/frontpage/webpage-mobileoval-4--1.png' %}" class="oval4" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                    <img src="{% static 'images/frontpage/webpage-mobileoval-7.png' %}" class="oval7" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                    <img src="{% static 'images/frontpage/webpage-mobileoval-6--1.png' %}" class="oval6" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                    <img src="{% static 'images/frontpage/webpage-mobileoval-5.png' %}" class="oval5" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                    <img src="{% static 'images/frontpage/webpage-mobileoval-8--1.png' %}" class="oval8" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                    <img src="{% static 'images/frontpage/webpage-mobileoval-9-copy--1.png' %}" class="oval9-copy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                    <img src="{% static 'images/frontpage/webpage-mobileoval-9-copy--1.png' %}" class="oval9-copy2" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                    <img src="{% static 'images/frontpage/webpage-mobileoval-9-copy--1.png' %}" class="oval9-copy3" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                    <img src="{% static 'images/frontpage/webpage-mobileoval-9-copy--1.png' %}" class="oval9-copy4" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                </div>
+            </div>
+            <div class="group3-layout-container">
+                <img src="{% static 'images/frontpage/webpage-mobilegroup-3--1.png' %}" class="group3" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+            </div>
+        </div>
+        <!-- Scripts -->
+        <script>
+            isHidden = function(e) {
+                if (!(e instanceof HTMLElement)) return !1;
+                if (getComputedStyle(e).display == "none") return !0; else if (e.parentNode && isHidden(e.parentNode)) return !0;
+                return !1;
+            };
+            loadAsyncSrcForTag = function(tag) {
+                var elements = document.getElementsByTagName(tag);
+                var toLoad = [];
+                for (var i = 0; i < elements.length; i++) {
+                    var e = elements[i];
+                    var src = e.getAttribute("src");
+                    var loaded = (src != undefined && src.length > 0 && src != 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+                    if (loaded) continue;
+                    var asyncSrc = e.getAttribute("src");
+                    if (asyncSrc == undefined || asyncSrc.length == 0) continue;
+                    if (isHidden(e)) continue;
+                    toLoad.push(e);
+                }
+                toLoad.sort(function(a, b) {
+                    return getTop(a) - getTop(b);
+                });
+                for (var i = 0; i < toLoad.length; i++) {
+                    var e = toLoad[i];
+                    var asyncSrc = e.getAttribute("src");
+                    e.setAttribute("src", asyncSrc);
+                }
+            };
+            pauseHiddenVideos = function(tag) {
+                var elements = document.getElementsByTagName("video");
+                for (var i = 0; i < elements.length; i++) {
+                    var e = elements[i];
+                    var isPlaying = !!(e.currentTime > 0 && !e.paused && !e.ended && e.readyState > 2);
+                    var isHidden = isHidden(e);
+                    if (!isPlaying && !isHidden && e.getAttribute("autoplay") == "autoplay") {
+                        e.play();
+                    } else if (isPlaying && isHidden) {
+                        e.pause();
+                    }
+                }
+            };
+            loadAsyncSrc = function(tag) {
+                loadAsyncSrcForTag("img");
+                loadAsyncSrcForTag("iframe");
+                loadAsyncSrcForTag("video");
+                pauseHiddenVideos();
+            };
+            var getTop = function(e) {
+                var top = 0;
+                do {
+                    top += e.offsetTop || 0;
+                    e = e.offsetParent;
+                } while (e);
+                return top;
+            };
+            loadAsyncSrc();
+            old_onResize = window.onresize;
+            new_onResize = undefined;
+            updateOnResize = function() {
+                if (new_onResize == undefined || window.onresize != new_onResize) {
+                    new_onResize = function(x) {
+                        if (old_onResize != undefined) old_onResize(x);
+                        loadAsyncSrc();
+                    };
+                    window.onresize = new_onResize;
+                    setTimeout(function() {
+                        updateOnResize();
+                    }, 3000);
+                }
+            };
+            updateOnResize();
+            setTimeout(function() {
+                loadAsyncSrc();
+            }, 200);
+        </script>
+        <!-- End of Scripts -->
+        <!-- Bootstrap Core JavaScript -->
+        <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    </body>
+</html>

@@ -1,0 +1,164 @@
+/*!
+ * Start Bootstrap - Small Business (https://startbootstrap.com/template-overviews/small-business)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-small-business/blob/master/LICENSE)
+ */
+
+/*.navbar-top-links {
+    margin-right: 0;
+}*/
+@font-face {
+  font-family: "ProximaNova-Semibold";
+  src: url('../fonts/ProximaNova-Sbold.otf') format("opentype");
+}
+@font-face {
+  font-family: "ProximaNova-Regular";
+  src: url('../fonts/ProximaNova-Reg.otf') format("opentype");
+}
+@font-face {
+  font-family: "ProximaNova-Light";
+  src: url('../fonts/ProximaNova-Light.otf') format("opentype");
+}
+@font-face {
+  font-family: "ProximaNova-Bold";
+  src: url('../fonts/ProximaNova-Bold.otf') format("opentype");
+}
+.navbar-top-links li {
+    display: inline-block;
+}
+
+.list-group{
+    max-height: 400px;
+    margin-bottom: 0px;
+    overflow-y:scroll;
+}
+.form-group {
+  user-select: none;
+}
+
+.form-group input[type="checkbox"] {
+  display: none;
+}
+
+.form-group input[type="checkbox"] + .list-group-item {
+  cursor: pointer;
+}
+
+.form-group input[type="checkbox"] + .list-group-item:before {
+  content: "\2713";
+  color: transparent;
+  font-weight: bold;
+  margin-right: 1em;
+}
+
+.form-group input[type="checkbox"]:checked + .list-group-item {
+  background-color: #288ef8;
+  color: #FFF;
+}
+
+.form-group input[type="checkbox"]:checked + .list-group-item:before {
+  color: inherit;
+}
+.title-ranking {
+  background-color    : rgba(255, 255, 255, 0.0);
+  height              : auto;
+  width               : 70px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 24.0px;
+}
+.title-facts {
+  background-color    : rgba(255, 255, 255, 0.0);
+  height              : auto;
+  width               : 62px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(40, 142, 248, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 24.0px;
+}
+
+.title-orig-data{
+  background-color    : rgba(255, 255, 255, 0.0);
+  height              : auto;
+  width               : auto;
+    padding-top: 4%;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : left;
+  letter-spacing      : 1.24px;
+  line-height         : 17.0px;
+}
+.title-proc-data{
+  background-color    : rgba(255, 255, 255, 0.0);
+  height              : auto;
+  width               : auto;
+  padding-top: 4%;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : left;
+  letter-spacing      : 1.24px;
+  line-height         : 17.0px;
+}
+.title-about {
+  background-color    : rgba(255, 255, 255, 0.0);
+  height              : auto;
+  width               : 49px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : left;
+  letter-spacing      : 1.24px;
+  line-height         : 17.0px;
+}
+.title-contact {
+  background-color    : rgba(255, 255, 255, 0.0);
+  height              : auto;
+  width               : 63px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : left;
+  letter-spacing      : 1.24px;
+  line-height         : 17.0px;
+}
+.panel-green {
+    border-color: #5cb85c;
+}
+
+.panel-green > .panel-heading {
+    border-color: #5cb85c;
+    color: white;
+    background-color: #5cb85c;
+}
+
+.panel-green > a {
+    color: #5cb85c;
+}
+
+.panel-green > a:hover {
+    color: #3d8b3d;
+}
+.panel-yellow {
+    border-color: #f0ad4e;
+}
+
+.panel-yellow > .panel-heading {
+    border-color: #f0ad4e;
+    color: white;
+    background-color: #f0ad4e;
+}
+
+.panel-yellow > a {
+    color: #f0ad4e;
+}
+
+.panel-yellow > a:hover {
+    color: #df8a13;
+}

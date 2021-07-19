@@ -1,0 +1,5499 @@
+/* 
+Jacob Burke
+May 13, 2018
+CSS for ranking Facts data upload and landing page
+*/
+
+@font-face {
+  font-family: "ProximaNova-Semibold";
+  src: url('../fonts/ProximaNova-Sbold.otf') format("opentype");
+}
+@font-face {
+  font-family: "ProximaNova-Regular";
+  src: url('../fonts/ProximaNova-Reg.otf') format("opentype");
+}
+@font-face {
+  font-family: "ProximaNova-Light";
+  src: url('../fonts/ProximaNova-Light.otf') format("opentype");
+}
+@font-face {
+  font-family: "ProximaNova-Bold";
+  src: url('../fonts/ProximaNova-Bold.otf') format("opentype");
+}
+
+.bp3-webpage-tablet {
+  width               : 100%;
+  min-width           : 768px;
+  height              : 100vh;
+  min-height          : 4150px;
+  position            : relative;
+  overflow            : hidden;
+  margin              : 0px;
+  background-color    : rgba(255, 255, 255, 1.0);
+}
+a {
+  text-decoration     : none;
+}
+div {
+  -webkit-text-size-adjust: none;
+}
+.bp3-webpage-tablet .bp3-nutritional-labels-f {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 720px;
+  height              : auto;
+  pointer-events      : auto;
+  position            : relative;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 32.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 58.0px;
+}
+.bp3-webpage-tablet .bp3-nutritional-labels-f-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 184px;
+  align-items         : center;
+  height              : auto;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp3-webpage-tablet .bp3-group11 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  right               : 17px;
+  top                 : 41px;
+  height              : 17px;
+  width               : 129px;
+  position            : absolute;
+  margin              : 0;
+}
+.bp3-webpage-tablet .bp3-group11 .bp3-about {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 49px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : left;
+  letter-spacing      : 1.24px;
+  line-height         : 17.0px;
+}
+.bp3-webpage-tablet .bp3-group11 .bp3-contact {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 63px;
+  position            : absolute;
+  margin              : 0;
+  left                : 67px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : left;
+  letter-spacing      : 1.24px;
+  line-height         : 17.0px;
+}
+.bp3-webpage-tablet .bp3-ranking-facts-genera {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 720px;
+  height              : auto;
+  pointer-events      : auto;
+  position            : relative;
+  font-family         : "ProximaNova-Light", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 22.0px;
+}
+.bp3-webpage-tablet .bp3-ranking-facts-genera-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 329px;
+  align-items         : center;
+  height              : auto;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp3-webpage-tablet .bp3-group9 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 358px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.bp3-webpage-tablet .bp3-group9-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 479px;
+  align-items         : center;
+  height              : 73px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp3-webpage-tablet .bp3-group9 .bp3-rectangle3 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 73px;
+  width               : 358px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-webpage-tablet .bp3-group9 .bp3-get-started {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 23px;
+  height              : auto;
+  width               : 276px;
+  position            : absolute;
+  margin              : 0;
+  left                : 40px;
+  font-family         : "ProximaNova-Bold", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  letter-spacing      : 1.59px;
+  line-height         : 22.0px;
+}
+.bp3-webpage-tablet .bp3-group24 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 865px;
+  height              : 410px;
+  width               : calc(100.00% - 47px);
+  position            : absolute;
+  margin              : 0;
+  left                : 24px;
+}
+.bp3-webpage-tablet .bp3-group24 .bp3-adding-fairness-sta {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 721px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 30.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 37.0px;
+}
+.bp3-webpage-tablet .bp3-group24 .bp3-ranking-your-facts-i {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 56px;
+  height              : auto;
+  width               : 721px;
+  position            : absolute;
+  margin              : 0;
+  left                : 2px;
+  font-family         : "ProximaNova-Light", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 30.0px;
+  margin-bottom      : 40px;
+}
+.bp3-webpage-tablet .bp3-group10 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 512px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.bp3-webpage-tablet .bp3-group10-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 1107px;
+  align-items         : center;
+  height              : 299px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp3-webpage-tablet .bp3-group10 .bp3-rectangle11 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 299px;
+  width               : 512px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-webpage-tablet .bp3-group10 .bp3-group2 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 94px;
+  height              : 103px;
+  width               : 103px;
+  position            : absolute;
+  margin              : 0;
+  left                : 205px;
+}
+.bp3-webpage-tablet .bp3-group10 .bp3-group2 .bp3-oval {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 103px;
+  width               : 103px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-webpage-tablet .bp3-group10 .bp3-group2 .bp3-stroke660 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 41px;
+  height              : 23px;
+  width               : 23px;
+  position            : absolute;
+  margin              : 0;
+  left                : 42px;
+  opacity             : 0.9;
+}
+.bp3-webpage-tablet .bp3-group10 .bp3-group2 .bp3-stroke660 .bp3-stroke6601 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 23px;
+  width               : 23px;
+  position            : relative;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-webpage-tablet .bp3-group10 .bp3-group2 .bp3-oval2 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 27px;
+  height              : 49px;
+  width               : 49px;
+  position            : absolute;
+  margin              : 0;
+  left                : 27px;
+  opacity             : 0.9;
+}
+.bp3-webpage-tablet .bp3-group20 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 353px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.bp3-webpage-tablet .bp3-group20-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 1466px;
+  align-items         : center;
+  height              : 70px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp3-webpage-tablet .bp3-group20 .bp3-get-there-in3-simple-steps {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 159px;
+  position            : absolute;
+  margin              : 0;
+  left                : -1px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 30.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.34px;
+  line-height         : 37.0px;
+}
+.bp3-webpage-tablet .bp3-group20 .bp3-a3-simple-steps {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 198px;
+  position            : absolute;
+  margin              : 0;
+  left                : 156px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 30.0px;
+  color               : rgba(40, 142, 248, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.34px;
+  line-height         : 37.0px;
+}
+.bp3-webpage-tablet .bp3-rectangle12 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 1533px;
+  height              : 466px;
+  width               : calc(100.00% - 48px);
+  position            : absolute;
+  margin              : 0;
+  left                : 24px;
+}
+.bp3-webpage-tablet .bp3-upload-your-data {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 1801px;
+  height              : auto;
+  width               : calc(100.00% - 161px);
+  position            : absolute;
+  margin              : 0;
+  left                : 81px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 32.0px;
+}
+.bp3-webpage-tablet .bp3-smoothly-easy-uploa {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 1856px;
+  height              : auto;
+  width               : calc(100.00% - 161px);
+  position            : absolute;
+  margin              : 0;
+  left                : 81px;
+  font-family         : "ProximaNova-Light", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 30.0px;
+}
+.bp3-webpage-tablet .bp3-group17 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 207px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.bp3-webpage-tablet .bp3-group17-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 1569px;
+  align-items         : center;
+  height              : 207px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp3-webpage-tablet .bp3-group17 .bp3-oval3-copy2 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 207px;
+  width               : 207px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-webpage-tablet .bp3-group17 .bp3-group6 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 39px;
+  height              : 131px;
+  width               : 123px;
+  position            : absolute;
+  margin              : 0;
+  left                : 43px;
+}
+.bp3-webpage-tablet .bp3-group17 .bp3-group6 .bp3-fill2632 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 26px;
+  height              : 61px;
+  width               : 122px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-webpage-tablet .bp3-group17 .bp3-group6 .bp3-fill2633 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 22px;
+  width               : 122px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-webpage-tablet .bp3-group17 .bp3-group6 .bp3-fill2634 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 44px;
+  height              : 87px;
+  width               : 48px;
+  position            : absolute;
+  margin              : 0;
+  left                : 35px;
+}
+.bp3-webpage-tablet .bp3-rectangle12-copy {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 2051px;
+  height              : 466px;
+  width               : calc(100.00% - 48px);
+  position            : absolute;
+  margin              : 0;
+  left                : 24px;
+}
+.bp3-webpage-tablet .bp3-set-your-parameters {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 2319px;
+  height              : auto;
+  width               : calc(100.00% - 123px);
+  position            : absolute;
+  margin              : 0;
+  left                : 61px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 32.0px;
+}
+.bp3-webpage-tablet .bp3-add-in-the-data-you {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 2374px;
+  height              : auto;
+  width               : calc(100.02% - 161px);
+  position            : absolute;
+  margin              : 0;
+  left                : 79px;
+  font-family         : "ProximaNova-Light", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 30.0px;
+}
+.bp3-webpage-tablet .bp3-group18 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 207px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.bp3-webpage-tablet .bp3-group18-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 2087px;
+  align-items         : center;
+  height              : 207px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp3-webpage-tablet .bp3-group18 .bp3-group5 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 39px;
+  height              : 131px;
+  width               : 131px;
+  position            : absolute;
+  margin              : 0;
+  left                : 39px;
+}
+.bp3-webpage-tablet .bp3-group18 .bp3-group5 .bp3-fill2134 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 131px;
+  width               : 105px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-webpage-tablet .bp3-group18 .bp3-group5 .bp3-fill2135 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 31px;
+  height              : 59px;
+  width               : 31px;
+  position            : absolute;
+  margin              : 0;
+  left                : 100px;
+}
+.bp3-webpage-tablet .bp3-group18 .bp3-group5 .bp3-fill2136 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 118px;
+  height              : 13px;
+  width               : 22px;
+  position            : absolute;
+  margin              : 0;
+  left                : 109px;
+}
+.bp3-webpage-tablet .bp3-group18 .bp3-group5 .bp3-fill2137 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 83px;
+  height              : 31px;
+  width               : 22px;
+  position            : absolute;
+  margin              : 0;
+  left                : 109px;
+}
+.bp3-webpage-tablet .bp3-group18 .bp3-oval3 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 207px;
+  width               : 207px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-webpage-tablet .bp3-rectangle12-copy2 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 2574px;
+  height              : 466px;
+  width               : calc(100.00% - 48px);
+  position            : absolute;
+  margin              : 0;
+  left                : 24px;
+}
+.bp3-webpage-tablet .bp3-check-your-facts {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 2842px;
+  height              : auto;
+  width               : calc(99.89% - 178px);
+  position            : absolute;
+  margin              : 0;
+  left                : 89px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 32.0px;
+}
+.bp3-webpage-tablet .bp3-analyze-the-results {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 2897px;
+  height              : auto;
+  width               : calc(100.09% - 161px);
+  position            : absolute;
+  margin              : 0;
+  left                : 81px;
+  font-family         : "ProximaNova-Light", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 30.0px;
+}
+.bp3-webpage-tablet .bp3-group12 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 207px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.bp3-webpage-tablet .bp3-group12-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 2610px;
+  align-items         : center;
+  height              : 207px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp3-webpage-tablet .bp3-group12 .bp3-group4 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 39px;
+  height              : 131px;
+  width               : 101px;
+  position            : absolute;
+  margin              : 0;
+  left                : 54px;
+}
+.bp3-webpage-tablet .bp3-group12 .bp3-group4 .bp3-fill4886 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 17px;
+  height              : 113px;
+  width               : 100px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-webpage-tablet .bp3-group12 .bp3-group4 .bp3-fill4887 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 35px;
+  width               : 48px;
+  position            : absolute;
+  margin              : 0;
+  left                : 26px;
+}
+.bp3-webpage-tablet .bp3-group12 .bp3-oval3-copy {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 207px;
+  width               : 207px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-webpage-tablet .bp3-group13 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 3212px;
+  height              : 336px;
+  width               : calc(100.00% + 6px);
+  position            : absolute;
+  margin              : 0;
+  left                : -4px;
+}
+.bp3-webpage-tablet .bp3-group13 .bp3-rectangle4 {
+  background-color    : rgba(40, 142, 248, 1.0);
+  top                 : 0px;
+  height              : 336px;
+  width               : 774px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-webpage-tablet .bp3-group13 .bp3-group14 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 244px;
+  height              : 56px;
+  width               : 374px;
+  position            : absolute;
+  margin              : 0;
+  left                : 203px;
+}
+.bp3-webpage-tablet .bp3-group13 .bp3-group14 .bp3-rectangle3-copy {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 56px;
+  width               : 375px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  border-radius       : 8px;
+  border-style        : solid;
+  border-width        : 3px;
+  border-color        : rgba(255, 255, 255, 1.0);
+}
+.bp3-webpage-tablet .bp3-group13 .bp3-group14 .bp3-contact-us {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 21px;
+  height              : auto;
+  width               : 298px;
+  position            : absolute;
+  margin              : 0;
+  left                : 37px;
+  font-family         : "ProximaNova-Bold", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  letter-spacing      : 1.11px;
+  line-height         : 17.0px;
+}
+.bp3-webpage-tablet .bp3-group13 .bp3-group15 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 149px;
+  height              : 61px;
+  width               : 374px;
+  position            : absolute;
+  margin              : 0;
+  left                : 203px;
+}
+.bp3-webpage-tablet .bp3-group13 .bp3-group15 .bp3-rectangle31 {
+  background-color    : rgba(255, 255, 255, 1.0);
+  top                 : 0px;
+  height              : 61px;
+  width               : 375px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  border-radius       : 8px;
+}
+.bp3-webpage-tablet .bp3-group13 .bp3-group15 .bp3-get-started1 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 22px;
+  height              : auto;
+  width               : 298px;
+  position            : absolute;
+  margin              : 0;
+  left                : 37px;
+  font-family         : "ProximaNova-Bold", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(40, 142, 248, 1.0);
+  text-align          : center;
+  letter-spacing      : 1.11px;
+  line-height         : 17.0px;
+}
+.bp3-webpage-tablet .bp3-group13 .bp3-upload-or-data-now-o {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 79px;
+  height              : auto;
+  width               : 666px;
+  position            : absolute;
+  margin              : 0;
+  left                : 55px;
+  font-family         : "ProximaNova-Regular", Helvetica, Arial, serif;
+  font-size           : 15.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 24.0px;
+}
+.bp3-webpage-tablet .bp3-group13 .bp3-ready-to-begin {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 36px;
+  height              : auto;
+  width               : 764px;
+  position            : absolute;
+  margin              : 0;
+  left                : 7px;
+  font-family         : "ProximaNova-Bold", Helvetica, Arial, serif;
+  font-size           : 30.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.34px;
+  line-height         : 37.0px;
+}
+.bp3-webpage-tablet .bp3-group23 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 331px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.bp3-webpage-tablet .bp3-group23-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 3629px;
+  align-items         : center;
+  height              : 353px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp3-webpage-tablet .bp3-group23 .bp3-group21 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 22px;
+  width               : 156px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-webpage-tablet .bp3-group23 .bp3-group21 .bp3-ranking {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 156px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(98, 101, 114, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 22.0px;
+}
+.bp3-webpage-tablet .bp3-group23 .bp3-group21 .bp3-facts {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 62px;
+  position            : absolute;
+  margin              : 0;
+  left                : 67px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(40, 142, 248, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 22.0px;
+}
+.bp3-webpage-tablet .bp3-group23 .bp3-headerlogo {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 31px;
+  height              : 27px;
+  width               : 137px;
+  position            : absolute;
+  margin              : 0;
+  left                : 164px;
+}
+.bp3-webpage-tablet .bp3-group23 .bp3-a-project-by {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 4px;
+  height              : auto;
+  width               : 63px;
+  position            : absolute;
+  margin              : 0;
+  left                : 164px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(216, 217, 220, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 15.0px;
+}
+.bp3-webpage-tablet .bp3-group23 .bp3-more-info {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 94px;
+  height              : auto;
+  width               : 63px;
+  position            : absolute;
+  margin              : 0;
+  left                : 1px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(216, 217, 220, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 15.0px;
+}
+.bp3-webpage-tablet .bp3-group23 .bp3-contact-us1 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 94px;
+  height              : auto;
+  width               : 63px;
+  position            : absolute;
+  margin              : 0;
+  left                : 164px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(216, 217, 220, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 15.0px;
+}
+.bp3-webpage-tablet .bp3-group23 .bp3-home-about-learning {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 110px;
+  height              : auto;
+  width               : 153px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "ProximaNova-Regular", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 24.0px;
+}
+.bp3-webpage-tablet .bp3-group23 .bp3-rectangle32 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 143px;
+  height              : 58px;
+  width               : 170px;
+  position            : absolute;
+  margin              : 0;
+  left                : 161px;
+}
+.bp3-webpage-tablet .bp3-group23 .bp3-rectangle3-copy2 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 257px;
+  height              : 58px;
+  width               : 170px;
+  position            : absolute;
+  margin              : 0;
+  left                : 158px;
+}
+.bp3-webpage-tablet .bp3-group23 .bp3-get-in-touch {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 162px;
+  height              : auto;
+  width               : 121px;
+  position            : absolute;
+  margin              : 0;
+  left                : 186px;
+  font-family         : "ProximaNova-Bold", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  letter-spacing      : 1.59px;
+  line-height         : 15.0px;
+}
+.bp3-webpage-tablet .bp3-group23 .bp3-drop-us-a-message {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 274px;
+  height              : auto;
+  width               : 136px;
+  position            : absolute;
+  margin              : 0;
+  left                : 175px;
+  font-family         : "ProximaNova-Bold", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  letter-spacing      : 1.59px;
+  line-height         : 15.0px;
+}
+.bp3-webpage-tablet .bp3-group23 .bp3-bumped-into-issues {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 116px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 165px;
+  font-family         : "ProximaNova-Regular", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 17.0px;
+}
+.bp3-webpage-tablet .bp3-group23 .bp3-any-feedback-or-gene {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 212px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 165px;
+  font-family         : "ProximaNova-Regular", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 18.0px;
+}
+.bp3-webpage-tablet .bp3-group23 .bp3-githubsquare {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 212px;
+  height              : 28px;
+  width               : 28px;
+  position            : absolute;
+  margin              : 0;
+  left                : 165px;
+}
+.bp3-webpage-tablet .bp3-group23 .bp3-githubsquare .bp3-githubsquare1 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 28px;
+  width               : 28px;
+  position            : relative;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-webpage-tablet .bp3-group23 .bp3-twittersquare {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 324px;
+  height              : 28px;
+  width               : 28px;
+  position            : absolute;
+  margin              : 0;
+  left                : 208px;
+}
+.bp3-webpage-tablet .bp3-group23 .bp3-twittersquare .bp3-twittersquare1 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 28px;
+  width               : 28px;
+  position            : relative;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-webpage-tablet .bp3-group151 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 863px;
+  margin-right        : -42px;
+  height              : 100%;
+  pointer-events      : auto;
+  margin-left         : 42px;
+  position            : relative;
+}
+.bp3-webpage-tablet .bp3-group151-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 3936px;
+  align-items         : center;
+  height              : 520px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp3-webpage-tablet .bp3-group151 .bp3-oval9 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 120px;
+  height              : 18px;
+  width               : 17px;
+  position            : absolute;
+  margin              : 0;
+  left                : 36px;
+}
+.bp3-webpage-tablet .bp3-group151 .bp3-oval4 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 120px;
+  height              : 366px;
+  width               : 337px;
+  position            : absolute;
+  margin              : 0;
+  left                : 526px;
+}
+.bp3-webpage-tablet .bp3-group151 .bp3-oval7 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 161px;
+  height              : 204px;
+  width               : 182px;
+  position            : absolute;
+  margin              : 0;
+  left                : 171px;
+}
+.bp3-webpage-tablet .bp3-group151 .bp3-oval6 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 137px;
+  height              : 222px;
+  width               : 203px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-webpage-tablet .bp3-group151 .bp3-oval5 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 174px;
+  height              : 346px;
+  width               : 313px;
+  position            : absolute;
+  margin              : 0;
+  left                : 302px;
+}
+.bp3-webpage-tablet .bp3-group151 .bp3-oval8 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 112px;
+  height              : 58px;
+  width               : 51px;
+  position            : absolute;
+  margin              : 0;
+  left                : 595px;
+}
+.bp3-webpage-tablet .bp3-group151 .bp3-oval9-copy {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 90px;
+  height              : 18px;
+  width               : 17px;
+  position            : absolute;
+  margin              : 0;
+  left                : 13px;
+}
+.bp3-webpage-tablet .bp3-group151 .bp3-oval9-copy2 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 65px;
+  height              : 18px;
+  width               : 17px;
+  position            : absolute;
+  margin              : 0;
+  left                : 45px;
+}
+.bp3-webpage-tablet .bp3-group151 .bp3-oval9-copy3 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 25px;
+  height              : 18px;
+  width               : 17px;
+  position            : absolute;
+  margin              : 0;
+  left                : 23px;
+}
+.bp3-webpage-tablet .bp3-group151 .bp3-oval9-copy4 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 18px;
+  width               : 17px;
+  position            : absolute;
+  margin              : 0;
+  left                : 51px;
+}
+.bp3-webpage-tablet .bp3-group3 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 338px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.bp3-webpage-tablet .bp3-group3-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 600px;
+  align-items         : center;
+  height              : 213px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp3-webpage-tablet .bp3-group8 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 34px;
+  height              : 31px;
+  width               : 170px;
+  position            : absolute;
+  margin              : 0;
+  left                : 16px;
+}
+.bp3-webpage-tablet .bp3-group8 .bp3-group19 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 5px;
+  height              : 26px;
+  width               : 133px;
+  position            : absolute;
+  margin              : 0;
+  left                : 37px;
+}
+.bp3-webpage-tablet .bp3-group8 .bp3-group19 .bp3-ranking1 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 121px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 24.0px;
+}
+.bp3-webpage-tablet .bp3-group8 .bp3-group19 .bp3-facts1 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 60px;
+  position            : absolute;
+  margin              : 0;
+  left                : 71px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(40, 142, 248, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 24.0px;
+}
+.bp3-webpage-tablet .bp3-group8 .bp3-group7 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 30px;
+  width               : 30px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp3-webpage-tablet .bp3-group8 .bp3-group7 .bp3-rectangle2 {
+  background-color    : rgba(40, 142, 248, 1.0);
+  top                 : 0px;
+  height              : 30px;
+  width               : 30px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  border-radius       : 6px;
+}
+.bp3-webpage-tablet .bp3-group8 .bp3-group7 .bp3-i-con {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 11px;
+  height              : auto;
+  width               : 24px;
+  position            : absolute;
+  margin              : 0;
+  left                : 7px;
+  font-family         : "ProximaNova-Regular", Helvetica, Arial, serif;
+  font-size           : 13.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 9.0px;
+}
+/* .animate-appear prefix for appear animations */
+.animate-appear {
+  opacity             : 0;
+  display             : block;
+  -webkit-animation   : reveal 0.3s ease-in-out 1 normal forwards;
+  -moz-animation      : reveal 0.3s ease-in 1 normal forwards;
+  -o-animation        : reveal 0.3s ease-in-out 1 normal forwards;
+  animation           : reveal 0.3s ease-in-out 1 normal forwards;
+}
+.animate-disappear {
+  opacity             : 1;
+  display             : block;
+  -webkit-animation   : reveal 0.3s ease-in-out 1 reverse forwards;
+  -moz-animation      : reveal 0.3s ease-in 1 normal forwards;
+  -o-animation        : reveal 0.3s ease-in-out 1 reverse forwards;
+  animation           : reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.animate-nodelay {
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay  : 0;
+  animation-delay     : 0;
+}
+@-webkit-keyframes reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@-moz-keyframes reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@-o-keyframes reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@keyframes reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+.bp4-webpage1024 {
+  width               : 100%;
+  min-width           : 1024px;
+  height              : 100vh;
+  min-height          : 3039px;
+  position            : relative;
+  overflow            : hidden;
+  margin              : 0px;
+  background-color    : rgba(253, 253, 253, 1.0);
+}
+a {
+  text-decoration     : none;
+}
+div {
+  -webkit-text-size-adjust: none;
+}
+.bp4-webpage1024 .bp4-rectangle5 {
+  background-color    : rgba(253, 253, 253, 1.0);
+  top                 : 1025px;
+  height              : 1024px;
+  width               : 1440px;
+  position            : absolute;
+  margin              : 0;
+  left                : 2px;
+}
+.bp4-webpage1024 .bp4-group17 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 937px;
+  margin-right        : -2px;
+  height              : 100%;
+  pointer-events      : auto;
+  margin-left         : 2px;
+  position            : relative;
+}
+.bp4-webpage1024 .bp4-group17-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 776px;
+  align-items         : center;
+  height              : 300px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp4-webpage1024 .bp4-group17 .bp4-adding-fairness-sta {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 376px;
+  position            : absolute;
+  margin              : 0;
+  left                : 569px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 32.0px;
+}
+.bp4-webpage1024 .bp4-group17 .bp4-ranking-your-facts-i {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 68px;
+  height              : auto;
+  width               : 372px;
+  position            : absolute;
+  margin              : 0;
+  left                : 569px;
+  font-family         : "ProximaNova-Light", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 30.0px;
+
+}
+.bp4-webpage1024 .bp4-group17 .bp4-group10 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 300px;
+  width               : 515px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp4-webpage1024 .bp4-group17 .bp4-group10 .bp4-rectangle11 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 300px;
+  width               : 515px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp4-webpage1024 .bp4-group17 .bp4-group10 .bp4-group2 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 95px;
+  height              : 105px;
+  width               : 105px;
+  position            : absolute;
+  margin              : 0;
+  left                : 205px;
+  transition          : all 0.2s ease-in-out;
+}
+.bp4-webpage1024 .bp4-group17 .bp4-group10 .bp4-group2:hover {
+  transform           : scale(1.1);
+}
+.bp4-webpage1024 .bp4-group17 .bp4-group10 .bp4-group2 .bp4-oval {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 105px;
+  width               : 105px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp4-webpage1024 .bp4-group17 .bp4-group10 .bp4-group2 .bp4-stroke660 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 41px;
+  height              : 24px;
+  width               : 23px;
+  position            : absolute;
+  margin              : 0;
+  left                : 43px;
+  opacity             : 0.9;
+}
+.bp4-webpage1024 .bp4-group17 .bp4-group10 .bp4-group2 .bp4-stroke660 .bp4-stroke6601 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 24px;
+  width               : 23px;
+  position            : relative;
+  margin              : 0;
+  left                : 0px;
+}
+.bp4-webpage1024 .bp4-group17 .bp4-group10 .bp4-group2 .bp4-oval2 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 25px;
+  height              : 54px;
+  width               : 54px;
+  position            : absolute;
+  margin              : 0;
+  left                : 25px;
+  opacity             : 0.9;
+}
+.bp4-webpage1024 .bp4-group13 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 927px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.bp4-webpage1024 .bp4-group13-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 2314px;
+  align-items         : center;
+  height              : 334px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp4-webpage1024 .bp4-group13 .bp4-group24 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 77px;
+  height              : 58px;
+  width               : 170px;
+  position            : absolute;
+  margin              : 0;
+  left                : 722px;
+  transition          : all 0.2s ease-in-out;
+}
+.bp4-webpage1024 .bp4-group13 .bp4-group24:hover {
+  transform           : scale(1.1);
+}
+.bp4-webpage1024 .bp4-group13 .bp4-group24 .bp4-rectangle3 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 58px;
+  width               : 170px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp4-webpage1024 .bp4-group13 .bp4-group24 .bp4-get-in-touch {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 19px;
+  height              : auto;
+  width               : 121px;
+  position            : absolute;
+  margin              : 0;
+  left                : 25px;
+  font-family         : "ProximaNova-Bold", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  letter-spacing      : 1.59px;
+  line-height         : 15.0px;
+}
+.bp4-webpage1024 .bp4-group13 .bp4-group25 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 176px;
+  height              : 58px;
+  width               : 170px;
+  position            : absolute;
+  margin              : 0;
+  left                : 722px;
+  transition          : all 0.2s ease-in-out;
+}
+.bp4-webpage1024 .bp4-group13 .bp4-group25:hover {
+  transform           : scale(1.1);
+}
+.bp4-webpage1024 .bp4-group13 .bp4-group25 .bp4-rectangle3-copy2 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 58px;
+  width               : 170px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp4-webpage1024 .bp4-group13 .bp4-group25 .bp4-drop-us-a-message {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 17px;
+  height              : auto;
+  width               : 136px;
+  position            : absolute;
+  margin              : 0;
+  left                : 17px;
+  font-family         : "ProximaNova-Bold", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  letter-spacing      : 1.59px;
+  line-height         : 15.0px;
+}
+.bp4-webpage1024 .bp4-group13 .bp4-headerlogo {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 53px;
+  height              : 39px;
+  width               : 198px;
+  position            : absolute;
+  margin              : 0;
+  left                : 478px;
+}
+.bp4-webpage1024 .bp4-group13 .bp4-group21 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 29px;
+  width               : 156px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp4-webpage1024 .bp4-group13 .bp4-group21 .bp4-ranking {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 156px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(98, 101, 114, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 29.0px;
+}
+.bp4-webpage1024 .bp4-group13 .bp4-group21 .bp4-facts {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 62px;
+  position            : absolute;
+  margin              : 0;
+  left                : 89px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(40, 142, 248, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 29.0px;
+}
+.bp4-webpage1024 .bp4-group13 .bp4-githubsquare {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 146px;
+  height              : 28px;
+  width               : 28px;
+  position            : absolute;
+  margin              : 0;
+  left                : 727px;
+}
+.bp4-webpage1024 .bp4-group13 .bp4-githubsquare .bp4-githubsquare1 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 28px;
+  width               : 28px;
+  position            : relative;
+  margin              : 0;
+  left                : 0px;
+}
+.bp4-webpage1024 .bp4-group13 .bp4-bumped-into-issues {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 48px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 726px;
+  font-family         : "ProximaNova-Regular", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 17.0px;
+}
+.bp4-webpage1024 .bp4-group13 .bp4-any-feedback-or-gene {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 146px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 726px;
+  font-family         : "ProximaNova-Regular", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 17.0px;
+}
+.bp4-webpage1024 .bp4-group13 .bp4-a2017-data-responsi {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 309px;
+  height              : auto;
+  width               : 355px;
+  position            : absolute;
+  margin              : 0;
+  left                : 286px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(216, 217, 220, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 22.0px;
+}
+.bp4-webpage1024 .bp4-group13 .bp4-more-info {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 5px;
+  height              : auto;
+  width               : 156px;
+  position            : absolute;
+  margin              : 0;
+  left                : 240px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(216, 217, 220, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 22.0px;
+}
+.bp4-webpage1024 .bp4-group13 .bp4-a-project-by {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 7px;
+  height              : auto;
+  width               : 156px;
+  position            : absolute;
+  margin              : 0;
+  left                : 480px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(216, 217, 220, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 22.0px;
+}
+.bp4-webpage1024 .bp4-group13 .bp4-contact-us {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 7px;
+  height              : auto;
+  width               : 156px;
+  position            : absolute;
+  margin              : 0;
+  left                : 726px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(216, 217, 220, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 22.0px;
+}
+.bp4-webpage1024 .bp4-group13 .bp4-twittersquare {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 246px;
+  height              : 28px;
+  width               : 28px;
+  position            : absolute;
+  margin              : 0;
+  left                : 770px;
+}
+.bp4-webpage1024 .bp4-group13 .bp4-twittersquare .bp4-twittersquare1 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 28px;
+  width               : 28px;
+  position            : relative;
+  margin              : 0;
+  left                : 0px;
+}
+.bp4-webpage1024 .bp4-group13 .bp4-home-about-learning {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 43px;
+  height              : auto;
+  width               : 153px;
+  position            : absolute;
+  margin              : 0;
+  left                : 247px;
+  font-family         : "ProximaNova-Regular", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 26.0px;
+}
+.bp4-webpage1024 .bp4-rectangle4 {
+  background-color    : rgba(40, 142, 248, 1.0);
+  top                 : 1844px;
+  height              : 390px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp4-webpage1024 .bp4-group12 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 596px;
+  margin-right        : -0px;
+  height              : 100%;
+  pointer-events      : auto;
+  margin-left         : 0px;
+  position            : relative;
+}
+.bp4-webpage1024 .bp4-group12-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 1933px;
+  align-items         : center;
+  height              : 198px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp4-webpage1024 .bp4-group12 .bp4-upload-or-data-now-o {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 70px;
+  height              : auto;
+  width               : 598px;
+  position            : absolute;
+  margin              : 0;
+  left                : -1px;
+  font-family         : "ProximaNova-Regular", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 30.0px;
+}
+.bp4-webpage1024 .bp4-group12 .bp4-ready-to-begin {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 524px;
+  position            : absolute;
+  margin              : 0;
+  left                : 36px;
+  font-family         : "ProximaNova-Bold", Helvetica, Arial, serif;
+  font-size           : 48.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.34px;
+  line-height         : 63.0px;
+}
+.bp4-webpage1024 .bp4-group12 .bp4-group22 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 137px;
+  height              : 61px;
+  width               : 184px;
+  position            : absolute;
+  margin              : 0;
+  left                : 81px;
+  transition          : all 0.2s ease-in-out;
+}
+.bp4-webpage1024 .bp4-group12 .bp4-group22:hover {
+  transform           : scale(1.1);
+}
+.bp4-webpage1024 .bp4-group12 .bp4-group22 .bp4-rectangle31 {
+  background-color    : rgba(255, 255, 255, 1.0);
+  top                 : 0px;
+  height              : 61px;
+  width               : 184px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  border-radius       : 8px;
+}
+.bp4-webpage1024 .bp4-group12 .bp4-group22 .bp4-get-started {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 22px;
+  height              : auto;
+  width               : 147px;
+  position            : absolute;
+  margin              : 0;
+  left                : 18px;
+  font-family         : "ProximaNova-Bold", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(40, 142, 248, 1.0);
+  text-align          : center;
+  letter-spacing      : 1.11px;
+  line-height         : 17.0px;
+}
+.bp4-webpage1024 .bp4-group12 .bp4-group23 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 138px;
+  height              : 56px;
+  width               : 184px;
+  position            : absolute;
+  margin              : 0;
+  left                : 298px;
+  transition          : all 0.2s ease-in-out;
+}
+.bp4-webpage1024 .bp4-group12 .bp4-group23:hover {
+  transform           : scale(1.1);
+}
+.bp4-webpage1024 .bp4-group12 .bp4-group23 .bp4-rectangle3-copy {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 56px;
+  width               : 184px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  border-radius       : 8px;
+  border-style        : solid;
+  border-width        : 3px;
+  border-color        : rgba(255, 255, 255, 1.0);
+}
+.bp4-webpage1024 .bp4-group12 .bp4-group23 .bp4-contact-us1 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 21px;
+  height              : auto;
+  width               : 147px;
+  position            : absolute;
+  margin              : 0;
+  left                : 18px;
+  font-family         : "ProximaNova-Bold", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  letter-spacing      : 1.11px;
+  line-height         : 17.0px;
+}
+.bp4-webpage1024 .bp4-group16 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 951px;
+  margin-right        : 2px;
+  height              : 100%;
+  pointer-events      : auto;
+  margin-left         : -2px;
+  position            : relative;
+}
+.bp4-webpage1024 .bp4-group16-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 1198px;
+  align-items         : center;
+  height              : 481px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp4-webpage1024 .bp4-group16 .bp4-rectangle12 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 84px;
+  height              : 397px;
+  width               : 289px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp4-webpage1024 .bp4-group16 .bp4-rectangle12-copy {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 84px;
+  height              : 397px;
+  width               : 289px;
+  position            : absolute;
+  margin              : 0;
+  left                : 331px;
+}
+.bp4-webpage1024 .bp4-group16 .bp4-group6 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 140px;
+  height              : 112px;
+  width               : 104px;
+  position            : absolute;
+  margin              : 0;
+  left                : 94px;
+}
+.bp4-webpage1024 .bp4-group16 .bp4-group6 .bp4-fill2632 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 22px;
+  height              : 53px;
+  width               : 104px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp4-webpage1024 .bp4-group16 .bp4-group6 .bp4-fill2633 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 19px;
+  width               : 104px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp4-webpage1024 .bp4-group16 .bp4-group6 .bp4-fill2634 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 37px;
+  height              : 75px;
+  width               : 42px;
+  position            : absolute;
+  margin              : 0;
+  left                : 29px;
+}
+.bp4-webpage1024 .bp4-group16 .bp4-group5 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 140px;
+  height              : 112px;
+  width               : 112px;
+  position            : absolute;
+  margin              : 0;
+  left                : 421px;
+}
+.bp4-webpage1024 .bp4-group16 .bp4-group5 .bp4-fill2134 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 112px;
+  width               : 90px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp4-webpage1024 .bp4-group16 .bp4-group5 .bp4-fill2135 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 26px;
+  height              : 51px;
+  width               : 27px;
+  position            : absolute;
+  margin              : 0;
+  left                : 85px;
+}
+.bp4-webpage1024 .bp4-group16 .bp4-group5 .bp4-fill2136 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 100px;
+  height              : 12px;
+  width               : 19px;
+  position            : absolute;
+  margin              : 0;
+  left                : 93px;
+}
+.bp4-webpage1024 .bp4-group16 .bp4-group5 .bp4-fill2137 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 70px;
+  height              : 28px;
+  width               : 19px;
+  position            : absolute;
+  margin              : 0;
+  left                : 93px;
+}
+.bp4-webpage1024 .bp4-group16 .bp4-rectangle12-copy2 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 84px;
+  height              : 397px;
+  width               : 289px;
+  position            : absolute;
+  margin              : 0;
+  left                : 662px;
+}
+.bp4-webpage1024 .bp4-group16 .bp4-group4 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 140px;
+  height              : 112px;
+  width               : 85px;
+  position            : absolute;
+  margin              : 0;
+  left                : 764px;
+}
+.bp4-webpage1024 .bp4-group16 .bp4-group4 .bp4-fill4886 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 14px;
+  height              : 98px;
+  width               : 85px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp4-webpage1024 .bp4-group16 .bp4-group4 .bp4-fill4887 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 30px;
+  width               : 41px;
+  position            : absolute;
+  margin              : 0;
+  left                : 22px;
+}
+.bp4-webpage1024 .bp4-group16 .bp4-oval3 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 107px;
+  height              : 177px;
+  width               : 176px;
+  position            : absolute;
+  margin              : 0;
+  left                : 387px;
+}
+.bp4-webpage1024 .bp4-group16 .bp4-oval3-copy2 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 107px;
+  height              : 177px;
+  width               : 176px;
+  position            : absolute;
+  margin              : 0;
+  left                : 57px;
+}
+.bp4-webpage1024 .bp4-group16 .bp4-oval3-copy {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 107px;
+  height              : 177px;
+  width               : 176px;
+  position            : absolute;
+  margin              : 0;
+  left                : 719px;
+}
+.bp4-webpage1024 .bp4-group16 .bp4-upload-your-data {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 293px;
+  height              : auto;
+  width               : 184px;
+  position            : absolute;
+  margin              : 0;
+  left                : 53px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 16.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 32.0px;
+}
+.bp4-webpage1024 .bp4-group16 .bp4-set-your-parameters {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 293px;
+  height              : auto;
+  width               : 210px;
+  position            : absolute;
+  margin              : 0;
+  left                : 370px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 16.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 32.0px;
+}
+.bp4-webpage1024 .bp4-group16 .bp4-check-your-facts {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 293px;
+  height              : auto;
+  width               : 168px;
+  position            : absolute;
+  margin              : 0;
+  left                : 723px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 16.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.8px;
+  line-height         : 32.0px;
+}
+.bp4-webpage1024 .bp4-group16 .bp4-smoothly-easy-uploa {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 335px;
+  height              : auto;
+  width               : 184px;
+  position            : absolute;
+  margin              : 0;
+  left                : 53px;
+  font-family         : "ProximaNova-Light", Helvetica, Arial, serif;
+  font-size           : 16.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 30.0px;
+}
+.bp4-webpage1024 .bp4-group16 .bp4-add-in-the-data-you {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 335px;
+  height              : auto;
+  width               : 184px;
+  position            : absolute;
+  margin              : 0;
+  left                : 383px;
+  font-family         : "ProximaNova-Light", Helvetica, Arial, serif;
+  font-size           : 16.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 30.0px;
+}
+.bp4-webpage1024 .bp4-group16 .bp4-analyze-the-results {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 335px;
+  height              : auto;
+  width               : 184px;
+  position            : absolute;
+  margin              : 0;
+  left                : 715px;
+  font-family         : "ProximaNova-Light", Helvetica, Arial, serif;
+  font-size           : 16.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 30.0px;
+}
+.bp4-webpage1024 .bp4-group16 .bp4-group20 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 656px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.bp4-webpage1024 .bp4-group16 .bp4-group20-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 0px;
+  align-items         : center;
+  height              : 77px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp4-webpage1024 .bp4-group16 .bp4-group20 .bp4-get-there-in {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 443px;
+  position            : absolute;
+  margin              : 0;
+  left                : -1px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 36.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 63.0px;
+}
+.bp4-webpage1024 .bp4-group16 .bp4-group20 .bp4-a3-simple-steps {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 443px;
+  position            : absolute;
+  margin              : 0;
+  left                : 214px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 36.0px;
+  color               : rgba(40, 142, 248, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 63.0px;
+}
+.bp4-webpage1024 .bp4-group18 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 34px;
+  height              : 511px;
+  width               : 1116px;
+  position            : absolute;
+  margin              : 0;
+  left                : 56px;
+}
+.bp4-webpage1024 .bp4-group18 .bp4-group3 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 105px;
+  height              : 406px;
+  width               : 646px;
+  position            : absolute;
+  margin              : 0;
+  left                : 470px;
+}
+.bp4-webpage1024 .bp4-group18 .bp4-group3 .bp4-group {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 406px;
+  width               : 646px;
+  position            : relative;
+  margin              : 0;
+  left                : 0px;
+}
+.bp4-webpage1024 .bp4-group18 .bp4-group3 .bp4-group .bp4-imac {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 377px;
+  width               : 456px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp4-webpage1024 .bp4-group18 .bp4-group3 .bp4-group .bp4-imac .bp4-edge {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 372px;
+  height              : 5px;
+  width               : 140px;
+  position            : absolute;
+  margin              : 0;
+  left                : 158px;
+}
+.bp4-webpage1024 .bp4-group18 .bp4-group3 .bp4-group .bp4-imac .bp4-stand {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 313px;
+  height              : 63px;
+  width               : 140px;
+  position            : absolute;
+  margin              : 0;
+  left                : 158px;
+}
+.bp4-webpage1024 .bp4-group18 .bp4-group3 .bp4-group .bp4-imac .bp4-screen-bottom {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 271px;
+  height              : 43px;
+  width               : 456px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp4-webpage1024 .bp4-group18 .bp4-group3 .bp4-group .bp4-imac .bp4-screen-top {
+  background-color    : rgba(243, 243, 243, 1.0);
+  top                 : 0px;
+  height              : 272px;
+  width               : 456px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  border-radius       : 11px;
+  border-style        : solid;
+  border-width        : 19px;
+  border-color        : rgba(17, 17, 17, 1.0);
+}
+.bp4-webpage1024 .bp4-group18 .bp4-group3 .bp4-group .bp4-imac .bp4-screen-content {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 18px;
+  height              : 236px;
+  width               : 421px;
+  position            : absolute;
+  margin              : 0;
+  left                : 18px;
+}
+.bp4-webpage1024 .bp4-group18 .bp4-group3 .bp4-group .bp4-imac .bp4-toolbar {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 17px;
+  height              : 10px;
+  width               : 424px;
+  position            : absolute;
+  margin              : 0;
+  left                : 16px;
+  opacity             : 0.79;
+}
+.bp4-webpage1024 .bp4-group18 .bp4-group3 .bp4-group .bp4-imac .bp4-camera {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 6px;
+  height              : 5px;
+  width               : 5px;
+  position            : absolute;
+  margin              : 0;
+  left                : 225px;
+}
+.bp4-webpage1024 .bp4-group18 .bp4-group3 .bp4-group .bp4-macbook-pro {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 186px;
+  height              : 219px;
+  width               : 369px;
+  position            : absolute;
+  margin              : 0;
+  left                : 275px;
+}
+.bp4-webpage1024 .bp4-group18 .bp4-group3 .bp4-group .bp4-macbook-pro .bp4-shadow {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 207px;
+  height              : 11px;
+  width               : 370px;
+  position            : absolute;
+  margin              : 0;
+  left                : -1px;
+}
+.bp4-webpage1024 .bp4-group18 .bp4-group3 .bp4-group .bp4-macbook-pro .bp4-screen-body {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 204px;
+  width               : 301px;
+  position            : absolute;
+  margin              : 0;
+  left                : 35px;
+}
+.bp4-webpage1024 .bp4-group18 .bp4-group3 .bp4-group .bp4-macbook-pro .bp4-keyboard-lower {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 200px;
+  height              : 15px;
+  width               : 369px;
+  position            : absolute;
+  margin              : 0;
+  left                : 2px;
+}
+.bp4-webpage1024 .bp4-group18 .bp4-group3 .bp4-group .bp4-macbook-pro .bp4-keyboard-upper {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 200px;
+  height              : 10px;
+  width               : 369px;
+  position            : absolute;
+  margin              : 0;
+  left                : 2px;
+}
+.bp4-webpage1024 .bp4-group18 .bp4-group3 .bp4-group .bp4-macbook-pro .bp4-notch {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 201px;
+  height              : 7px;
+  width               : 54px;
+  position            : absolute;
+  margin              : 0;
+  left                : 159px;
+}
+.bp4-webpage1024 .bp4-group18 .bp4-group3 .bp4-group .bp4-macbook-pro .bp4-screen {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 12px;
+  height              : 182px;
+  width               : 281px;
+  position            : absolute;
+  margin              : 0;
+  left                : 45px;
+}
+.bp4-webpage1024 .bp4-group18 .bp4-group3 .bp4-group .bp4-macbook-pro .bp4-toolbar1 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 11px;
+  height              : 10px;
+  width               : 281px;
+  position            : absolute;
+  margin              : 0;
+  left                : 43px;
+  opacity             : 0.79;
+}
+.bp4-webpage1024 .bp4-group18 .bp4-group3 .bp4-group .bp4-macbook-pro .bp4-camera1 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 5px;
+  height              : 6px;
+  width               : 5px;
+  position            : absolute;
+  margin              : 0;
+  left                : 183px;
+}
+.bp4-webpage1024 .bp4-group18 .bp4-ranking-facts-genera {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 346px;
+  height              : auto;
+  width               : 369px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "ProximaNova-Light", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 22.0px;
+}
+.bp4-webpage1024 .bp4-group18 .bp4-nutritional-labels-f {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 207px;
+  height              : auto;
+  width               : 406px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 48.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 60.0px;
+}
+.bp4-webpage1024 .bp4-group18 .bp4-group8 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 31px;
+  width               : 170px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp4-webpage1024 .bp4-group18 .bp4-group8 .bp4-group19 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 5px;
+  height              : 26px;
+  width               : 133px;
+  position            : absolute;
+  margin              : 0;
+  left                : 37px;
+}
+.bp4-webpage1024 .bp4-group18 .bp4-group8 .bp4-group19 .bp4-ranking1 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 121px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 24.0px;
+}
+.bp4-webpage1024 .bp4-group18 .bp4-group8 .bp4-group19 .bp4-facts1 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 60px;
+  position            : absolute;
+  margin              : 0;
+  left                : 71px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(40, 142, 248, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 24.0px;
+}
+.bp4-webpage1024 .bp4-group18 .bp4-group8 .bp4-group7 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 30px;
+  width               : 30px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp4-webpage1024 .bp4-group18 .bp4-group8 .bp4-group7 .bp4-rectangle2 {
+  background-color    : rgba(40, 142, 248, 1.0);
+  top                 : 0px;
+  height              : 30px;
+  width               : 30px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  border-radius       : 6px;
+}
+.bp4-webpage1024 .bp4-group18 .bp4-group8 .bp4-group7 .bp4-i-con {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 11px;
+  height              : auto;
+  width               : 24px;
+  position            : absolute;
+  margin              : 0;
+  left                : 7px;
+  font-family         : "ProximaNova-Regular", Helvetica, Arial, serif;
+  font-size           : 13.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 9.0px;
+}
+.bp4-webpage1024 .bp4-group18 .bp4-group11 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  right               : 220px;
+  top                 : 5px;
+  height              : 17px;
+  width               : 129px;
+  position            : absolute;
+  margin              : 0;
+}
+.bp4-webpage1024 .bp4-group18 .bp4-group11 .bp4-about {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 49px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : left;
+  letter-spacing      : 1.24px;
+  line-height         : 17.0px;
+}
+.bp4-webpage1024 .bp4-group18 .bp4-group11 .bp4-contact {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 63px;
+  position            : absolute;
+  margin              : 0;
+  left                : 67px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : left;
+  letter-spacing      : 1.24px;
+  line-height         : 17.0px;
+}
+.bp4-webpage1024 .bp4-group9 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 475px;
+  height              : 73px;
+  width               : 196px;
+  position            : absolute;
+  margin              : 0;
+  left                : 50px;
+  transition          : all 0.2s ease-in-out;
+}
+.bp4-webpage1024 .bp4-group9:hover {
+  transform           : scale(1.1);
+}
+.bp4-webpage1024 .bp4-group9 .bp4-rectangle32 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 73px;
+  width               : 196px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp4-webpage1024 .bp4-group9 .bp4-get-started1 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 25px;
+  height              : auto;
+  width               : 148px;
+  position            : absolute;
+  margin              : 0;
+  left                : 24px;
+  font-family         : "ProximaNova-Bold", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  letter-spacing      : 1.59px;
+  line-height         : 17.0px;
+}
+.bp4-webpage1024 .bp4-group15-copy {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 1040px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.bp4-webpage1024 .bp4-group15-copy-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 2744px;
+  align-items         : center;
+  height              : 689px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp4-webpage1024 .bp4-group15-copy .bp4-oval9 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 155px;
+  height              : 30px;
+  width               : 24px;
+  position            : absolute;
+  margin              : 0;
+  left                : 42px;
+}
+.bp4-webpage1024 .bp4-group15-copy .bp4-oval4 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 155px;
+  height              : 487px;
+  width               : 399px;
+  position            : absolute;
+  margin              : 0;
+  left                : 641px;
+}
+.bp4-webpage1024 .bp4-group15-copy .bp4-oval7 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 209px;
+  height              : 270px;
+  width               : 223px;
+  position            : absolute;
+  margin              : 0;
+  left                : 209px;
+}
+.bp4-webpage1024 .bp4-group15-copy .bp4-oval6 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 181px;
+  height              : 297px;
+  width               : 243px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp4-webpage1024 .bp4-group15-copy .bp4-oval5 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 231px;
+  height              : 458px;
+  width               : 376px;
+  position            : absolute;
+  margin              : 0;
+  left                : 363px;
+}
+.bp4-webpage1024 .bp4-group15-copy .bp4-oval8 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 147px;
+  height              : 78px;
+  width               : 65px;
+  position            : absolute;
+  margin              : 0;
+  left                : 719px;
+}
+.bp4-webpage1024 .bp4-group15-copy .bp4-oval9-copy {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 118px;
+  height              : 30px;
+  width               : 24px;
+  position            : absolute;
+  margin              : 0;
+  left                : 17px;
+}
+.bp4-webpage1024 .bp4-group15-copy .bp4-oval9-copy2 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 88px;
+  height              : 30px;
+  width               : 24px;
+  position            : absolute;
+  margin              : 0;
+  left                : 52px;
+}
+.bp4-webpage1024 .bp4-group15-copy .bp4-oval9-copy3 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 35px;
+  height              : 30px;
+  width               : 24px;
+  position            : absolute;
+  margin              : 0;
+  left                : 28px;
+}
+.bp4-webpage1024 .bp4-group15-copy .bp4-oval9-copy4 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 30px;
+  width               : 24px;
+  position            : absolute;
+  margin              : 0;
+  left                : 65px;
+}
+/* .animate-appear prefix for appear animations */
+.animate-appear {
+  opacity             : 0;
+  display             : block;
+  -webkit-animation   : reveal 0.3s ease-in-out 1 normal forwards;
+  -moz-animation      : reveal 0.3s ease-in 1 normal forwards;
+  -o-animation        : reveal 0.3s ease-in-out 1 normal forwards;
+  animation           : reveal 0.3s ease-in-out 1 normal forwards;
+}
+.animate-disappear {
+  opacity             : 1;
+  display             : block;
+  -webkit-animation   : reveal 0.3s ease-in-out 1 reverse forwards;
+  -moz-animation      : reveal 0.3s ease-in 1 normal forwards;
+  -o-animation        : reveal 0.3s ease-in-out 1 reverse forwards;
+  animation           : reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.animate-nodelay {
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay  : 0;
+  animation-delay     : 0;
+}
+@-webkit-keyframes reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@-moz-keyframes reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@-o-keyframes reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@keyframes reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+.bp2-screen1 {
+  width               : 100%;
+  min-width           : 375px;
+  height              : 100vh;
+  min-height          : 4150px;
+  position            : relative;
+  overflow            : hidden;
+  margin              : 0px;
+  background-color    : rgba(255, 255, 255, 1.0);
+}
+a {
+  text-decoration     : none;
+}
+div {
+  -webkit-text-size-adjust: none;
+}
+.bp2-screen1 .bp2-group16 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 35px;
+  height              : 561px;
+  width               : calc(100.00% - 48px);
+  position            : absolute;
+  margin              : 0;
+  left                : 24px;
+}
+.bp2-screen1 .bp2-group16 .bp2-group11 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 8px;
+  height              : 15px;
+  width               : 97px;
+  position            : absolute;
+  margin              : 0;
+  left                : 229px;
+}
+.bp2-screen1 .bp2-group16 .bp2-group11 .bp2-about {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 40px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "ProximaNova-Regular", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : left;
+  letter-spacing      : 1.24px;
+  line-height         : 15.0px;
+}
+.bp2-screen1 .bp2-group16 .bp2-group11 .bp2-contact {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 51px;
+  position            : absolute;
+  margin              : 0;
+  left                : 46px;
+  font-family         : "ProximaNova-Regular", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : left;
+  letter-spacing      : 1.24px;
+  line-height         : 15.0px;
+}
+.bp2-screen1 .bp2-group16 .bp2-group8 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 30px;
+  width               : 174px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-screen1 .bp2-group16 .bp2-group8 .bp2-group19 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 4px;
+  height              : 24px;
+  width               : 137px;
+  position            : absolute;
+  margin              : 0;
+  left                : 37px;
+}
+.bp2-screen1 .bp2-group16 .bp2-group8 .bp2-group19 .bp2-ranking {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 125px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 24.0px;
+}
+.bp2-screen1 .bp2-group16 .bp2-group8 .bp2-group19 .bp2-facts {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 61px;
+  position            : absolute;
+  margin              : 0;
+  left                : 73px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(40, 142, 248, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 24.0px;
+}
+.bp2-screen1 .bp2-group16 .bp2-group8 .bp2-group7 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 30px;
+  width               : 30px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-screen1 .bp2-group16 .bp2-group8 .bp2-group7 .bp2-rectangle2 {
+  background-color    : rgba(40, 142, 248, 1.0);
+  top                 : 0px;
+  height              : 30px;
+  width               : 30px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  border-radius       : 6px;
+}
+.bp2-screen1 .bp2-group16 .bp2-group8 .bp2-group7 .bp2-i-con {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 11px;
+  height              : auto;
+  width               : 24px;
+  position            : absolute;
+  margin              : 0;
+  left                : 7px;
+  font-family         : "ProximaNova-Regular", Helvetica, Arial, serif;
+  font-size           : 13.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 9.0px;
+}
+.bp2-screen1 .bp2-group16 .bp2-nutritional-labels-f {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 149px;
+  height              : auto;
+  width               : 328px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 32.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 58.0px;
+}
+.bp2-screen1 .bp2-group16 .bp2-ranking-facts-genera {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 294px;
+  height              : auto;
+  width               : 328px;
+  position            : absolute;
+  margin              : 0;
+  left                : 1px;
+  font-family         : "ProximaNova-Light", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 22.0px;
+}
+.bp2-screen1 .bp2-group16 .bp2-group9 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 444px;
+  height              : 73px;
+  width               : 326px;
+  position            : absolute;
+  margin              : 0;
+  left                : -1px;
+}
+.bp2-screen1 .bp2-group16 .bp2-group9 .bp2-rectangle3 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 73px;
+  width               : 326px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-screen1 .bp2-group16 .bp2-group9 .bp2-get-started {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 23px;
+  height              : auto;
+  width               : 251px;
+  position            : absolute;
+  margin              : 0;
+  left                : 36px;
+  font-family         : "ProximaNova-Bold", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  letter-spacing      : 1.59px;
+  line-height         : 22.0px;
+}
+.bp2-screen1 .bp2-group24 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 900px;
+  height              : 410px;
+  width               : calc(100.00% - 47px);
+  position            : absolute;
+  margin              : 0;
+  left                : 24px;
+}
+.bp2-screen1 .bp2-group24 .bp2-adding-fairness-sta {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 329px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 30.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 37.0px;
+}
+.bp2-screen1 .bp2-group24 .bp2-ranking-your-facts-i {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 122px;
+  height              : auto;
+  width               : 329px;
+  position            : absolute;
+  margin              : 0;
+  left                : 1px;
+  font-family         : "ProximaNova-Light", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 30.0px;
+  margin-bottom      : 40px;
+}
+.bp2-screen1 .bp2-group10 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 387px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.bp2-screen1 .bp2-group10-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 1179px;
+  align-items         : center;
+  height              : 227px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp2-screen1 .bp2-group10 .bp2-rectangle11 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 227px;
+  width               : 387px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-screen1 .bp2-group10 .bp2-group2 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 71px;
+  height              : 79px;
+  width               : 79px;
+  position            : absolute;
+  margin              : 0;
+  left                : 155px;
+}
+.bp2-screen1 .bp2-group10 .bp2-group2 .bp2-oval {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 79px;
+  width               : 79px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-screen1 .bp2-group10 .bp2-group2 .bp2-stroke660 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 30px;
+  height              : 18px;
+  width               : 18px;
+  position            : absolute;
+  margin              : 0;
+  left                : 32px;
+  opacity             : 0.9;
+}
+.bp2-screen1 .bp2-group10 .bp2-group2 .bp2-stroke660 .bp2-stroke6601 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 18px;
+  width               : 18px;
+  position            : relative;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-screen1 .bp2-group10 .bp2-group2 .bp2-oval2 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 19px;
+  height              : 36px;
+  width               : 36px;
+  position            : absolute;
+  margin              : 0;
+  left                : 19px;
+  opacity             : 0.9;
+}
+.bp2-screen1 .bp2-group20 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 353px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.bp2-screen1 .bp2-group20-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 1466px;
+  align-items         : center;
+  height              : 70px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp2-screen1 .bp2-group20 .bp2-get-there-in3-simple-steps {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 159px;
+  position            : absolute;
+  margin              : 0;
+  left                : -1px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 30.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.34px;
+  line-height         : 37.0px;
+}
+.bp2-screen1 .bp2-group20 .bp2-a3-simple-steps {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 198px;
+  position            : absolute;
+  margin              : 0;
+  left                : 156px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 30.0px;
+  color               : rgba(40, 142, 248, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.34px;
+  line-height         : 37.0px;
+}
+.bp2-screen1 .bp2-rectangle12 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 1533px;
+  height              : 466px;
+  width               : calc(100.00% - 48px);
+  position            : absolute;
+  margin              : 0;
+  left                : 24px;
+}
+.bp2-screen1 .bp2-upload-your-data {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 1801px;
+  height              : auto;
+  width               : calc(100.00% - 161px);
+  position            : absolute;
+  margin              : 0;
+  left                : 81px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 32.0px;
+}
+.bp2-screen1 .bp2-smoothly-easy-uploa {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 1856px;
+  height              : auto;
+  width               : calc(100.00% - 161px);
+  position            : absolute;
+  margin              : 0;
+  left                : 81px;
+  font-family         : "ProximaNova-Light", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 30.0px;
+}
+.bp2-screen1 .bp2-group17 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 208px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.bp2-screen1 .bp2-group17-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 1569px;
+  align-items         : center;
+  height              : 208px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp2-screen1 .bp2-group17 .bp2-oval3-copy2 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 208px;
+  width               : 208px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-screen1 .bp2-group17 .bp2-group6 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 38px;
+  height              : 132px;
+  width               : 124px;
+  position            : absolute;
+  margin              : 0;
+  left                : 42px;
+}
+.bp2-screen1 .bp2-group17 .bp2-group6 .bp2-fill2632 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 26px;
+  height              : 63px;
+  width               : 124px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-screen1 .bp2-group17 .bp2-group6 .bp2-fill2633 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 23px;
+  width               : 124px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-screen1 .bp2-group17 .bp2-group6 .bp2-fill2634 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 43px;
+  height              : 89px;
+  width               : 50px;
+  position            : absolute;
+  margin              : 0;
+  left                : 34px;
+}
+.bp2-screen1 .bp2-rectangle12-copy {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 2051px;
+  height              : 466px;
+  width               : calc(100.00% - 48px);
+  position            : absolute;
+  margin              : 0;
+  left                : 24px;
+}
+.bp2-screen1 .bp2-set-your-parameters {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 2319px;
+  height              : auto;
+  width               : calc(100.00% - 123px);
+  position            : absolute;
+  margin              : 0;
+  left                : 61px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 32.0px;
+}
+.bp2-screen1 .bp2-add-in-the-data-you {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 2374px;
+  height              : auto;
+  width               : calc(100.02% - 161px);
+  position            : absolute;
+  margin              : 0;
+  left                : 79px;
+  font-family         : "ProximaNova-Light", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 30.0px;
+}
+.bp2-screen1 .bp2-group18 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 208px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.bp2-screen1 .bp2-group18-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 2087px;
+  align-items         : center;
+  height              : 208px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp2-screen1 .bp2-group18 .bp2-group5 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 38px;
+  height              : 132px;
+  width               : 132px;
+  position            : absolute;
+  margin              : 0;
+  left                : 38px;
+}
+.bp2-screen1 .bp2-group18 .bp2-group5 .bp2-fill2134 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 132px;
+  width               : 106px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-screen1 .bp2-group18 .bp2-group5 .bp2-fill2135 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 30px;
+  height              : 61px;
+  width               : 32px;
+  position            : absolute;
+  margin              : 0;
+  left                : 100px;
+}
+.bp2-screen1 .bp2-group18 .bp2-group5 .bp2-fill2136 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 117px;
+  height              : 15px;
+  width               : 23px;
+  position            : absolute;
+  margin              : 0;
+  left                : 109px;
+}
+.bp2-screen1 .bp2-group18 .bp2-group5 .bp2-fill2137 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 82px;
+  height              : 33px;
+  width               : 23px;
+  position            : absolute;
+  margin              : 0;
+  left                : 109px;
+}
+.bp2-screen1 .bp2-group18 .bp2-oval3 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 208px;
+  width               : 208px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-screen1 .bp2-rectangle12-copy2 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 2574px;
+  height              : 466px;
+  width               : calc(100.00% - 48px);
+  position            : absolute;
+  margin              : 0;
+  left                : 24px;
+}
+.bp2-screen1 .bp2-check-your-facts {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 2842px;
+  height              : auto;
+  width               : calc(99.89% - 178px);
+  position            : absolute;
+  margin              : 0;
+  left                : 89px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 32.0px;
+}
+.bp2-screen1 .bp2-analyze-the-results {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 2897px;
+  height              : auto;
+  width               : calc(100.09% - 161px);
+  position            : absolute;
+  margin              : 0;
+  left                : 81px;
+  font-family         : "ProximaNova-Light", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 30.0px;
+}
+.bp2-screen1 .bp2-group12 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 208px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.bp2-screen1 .bp2-group12-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 2610px;
+  align-items         : center;
+  height              : 208px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp2-screen1 .bp2-group12 .bp2-group4 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 38px;
+  height              : 132px;
+  width               : 102px;
+  position            : absolute;
+  margin              : 0;
+  left                : 54px;
+}
+.bp2-screen1 .bp2-group12 .bp2-group4 .bp2-fill4886 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 17px;
+  height              : 115px;
+  width               : 102px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-screen1 .bp2-group12 .bp2-group4 .bp2-fill4887 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 36px;
+  width               : 50px;
+  position            : absolute;
+  margin              : 0;
+  left                : 26px;
+}
+.bp2-screen1 .bp2-group12 .bp2-oval3-copy {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 208px;
+  width               : 208px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-screen1 .bp2-group13 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 3212px;
+  height              : 336px;
+  width               : calc(100.00% + 6px);
+  position            : absolute;
+  margin              : 0;
+  left                : -4px;
+}
+.bp2-screen1 .bp2-group13 .bp2-rectangle4 {
+  background-color    : rgba(40, 142, 248, 1.0);
+  top                 : 0px;
+  height              : 336px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-screen1 .bp2-group13 .bp2-group14 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 244px;
+  height              : 56px;
+  width               : 184px;
+  position            : absolute;
+  margin              : 0;
+  left                : 100px;
+}
+.bp2-screen1 .bp2-group13 .bp2-group14 .bp2-rectangle3-copy {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 56px;
+  width               : 184px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  border-radius       : 8px;
+  border-style        : solid;
+  border-width        : 3px;
+  border-color        : rgba(255, 255, 255, 1.0);
+}
+.bp2-screen1 .bp2-group13 .bp2-group14 .bp2-contact-us {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 21px;
+  height              : auto;
+  width               : 147px;
+  position            : absolute;
+  margin              : 0;
+  left                : 18px;
+  font-family         : "ProximaNova-Bold", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  letter-spacing      : 1.11px;
+  line-height         : 17.0px;
+}
+.bp2-screen1 .bp2-group13 .bp2-group15 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 149px;
+  height              : 61px;
+  width               : 184px;
+  position            : absolute;
+  margin              : 0;
+  left                : 100px;
+}
+.bp2-screen1 .bp2-group13 .bp2-group15 .bp2-rectangle31 {
+  background-color    : rgba(255, 255, 255, 1.0);
+  top                 : 0px;
+  height              : 61px;
+  width               : 184px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  border-radius       : 8px;
+}
+.bp2-screen1 .bp2-group13 .bp2-group15 .bp2-get-started1 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 22px;
+  height              : auto;
+  width               : 147px;
+  position            : absolute;
+  margin              : 0;
+  left                : 18px;
+  font-family         : "ProximaNova-Bold", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(40, 142, 248, 1.0);
+  text-align          : center;
+  letter-spacing      : 1.11px;
+  line-height         : 17.0px;
+}
+.bp2-screen1 .bp2-group13 .bp2-upload-or-data-now-o {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 79px;
+  height              : auto;
+  width               : 329px;
+  position            : absolute;
+  margin              : 0;
+  left                : 27px;
+  font-family         : "ProximaNova-Regular", Helvetica, Arial, serif;
+  font-size           : 15.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 24.0px;
+}
+.bp2-screen1 .bp2-group13 .bp2-ready-to-begin {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 36px;
+  height              : auto;
+  width               : 377px;
+  position            : absolute;
+  margin              : 0;
+  left                : 3px;
+  font-family         : "ProximaNova-Bold", Helvetica, Arial, serif;
+  font-size           : 30.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.34px;
+  line-height         : 37.0px;
+}
+.bp2-screen1 .bp2-group23 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 331px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.bp2-screen1 .bp2-group23-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 3629px;
+  align-items         : center;
+  height              : 353px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp2-screen1 .bp2-group23 .bp2-group21 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 22px;
+  width               : 156px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-screen1 .bp2-group23 .bp2-group21 .bp2-ranking1 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 156px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(98, 101, 114, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 22.0px;
+}
+.bp2-screen1 .bp2-group23 .bp2-group21 .bp2-facts1 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 62px;
+  position            : absolute;
+  margin              : 0;
+  left                : 67px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(40, 142, 248, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 22.0px;
+}
+.bp2-screen1 .bp2-group23 .bp2-headerlogo {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 31px;
+  height              : 27px;
+  width               : 137px;
+  position            : absolute;
+  margin              : 0;
+  left                : 164px;
+}
+.bp2-screen1 .bp2-group23 .bp2-a-project-by {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 4px;
+  height              : auto;
+  width               : 63px;
+  position            : absolute;
+  margin              : 0;
+  left                : 164px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(216, 217, 220, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 15.0px;
+}
+.bp2-screen1 .bp2-group23 .bp2-more-info {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 94px;
+  height              : auto;
+  width               : 63px;
+  position            : absolute;
+  margin              : 0;
+  left                : 1px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(216, 217, 220, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 15.0px;
+}
+.bp2-screen1 .bp2-group23 .bp2-contact-us1 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 94px;
+  height              : auto;
+  width               : 63px;
+  position            : absolute;
+  margin              : 0;
+  left                : 164px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(216, 217, 220, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 15.0px;
+}
+.bp2-screen1 .bp2-group23 .bp2-home-about-learning {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 110px;
+  height              : auto;
+  width               : 153px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "ProximaNova-Regular", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 24.0px;
+}
+.bp2-screen1 .bp2-group23 .bp2-rectangle32 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 143px;
+  height              : 58px;
+  width               : 170px;
+  position            : absolute;
+  margin              : 0;
+  left                : 161px;
+}
+.bp2-screen1 .bp2-group23 .bp2-rectangle3-copy2 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 257px;
+  height              : 58px;
+  width               : 170px;
+  position            : absolute;
+  margin              : 0;
+  left                : 158px;
+}
+.bp2-screen1 .bp2-group23 .bp2-get-in-touch {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 162px;
+  height              : auto;
+  width               : 121px;
+  position            : absolute;
+  margin              : 0;
+  left                : 186px;
+  font-family         : "ProximaNova-Bold", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  letter-spacing      : 1.59px;
+  line-height         : 15.0px;
+}
+.bp2-screen1 .bp2-group23 .bp2-drop-us-a-message {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 274px;
+  height              : auto;
+  width               : 136px;
+  position            : absolute;
+  margin              : 0;
+  left                : 175px;
+  font-family         : "ProximaNova-Bold", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  letter-spacing      : 1.59px;
+  line-height         : 15.0px;
+}
+.bp2-screen1 .bp2-group23 .bp2-bumped-into-issues {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 116px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 165px;
+  font-family         : "ProximaNova-Regular", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 17.0px;
+}
+.bp2-screen1 .bp2-group23 .bp2-any-feedback-or-gene {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 212px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 165px;
+  font-family         : "ProximaNova-Regular", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 18.0px;
+}
+.bp2-screen1 .bp2-group23 .bp2-githubsquare {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 212px;
+  height              : 28px;
+  width               : 28px;
+  position            : absolute;
+  margin              : 0;
+  left                : 165px;
+}
+.bp2-screen1 .bp2-group23 .bp2-githubsquare .bp2-githubsquare1 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 28px;
+  width               : 28px;
+  position            : relative;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-screen1 .bp2-group23 .bp2-twittersquare {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 324px;
+  height              : 28px;
+  width               : 28px;
+  position            : absolute;
+  margin              : 0;
+  left                : 208px;
+}
+.bp2-screen1 .bp2-group23 .bp2-twittersquare .bp2-twittersquare1 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 28px;
+  width               : 28px;
+  position            : relative;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-screen1 .bp2-group151 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 385px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.bp2-screen1 .bp2-group151-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 4046px;
+  align-items         : center;
+  height              : 214px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp2-screen1 .bp2-group151 .bp2-oval9 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 49px;
+  height              : 8px;
+  width               : 9px;
+  position            : absolute;
+  margin              : 0;
+  left                : 15px;
+}
+.bp2-screen1 .bp2-group151 .bp2-oval4 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 49px;
+  height              : 151px;
+  width               : 150px;
+  position            : absolute;
+  margin              : 0;
+  left                : 235px;
+}
+.bp2-screen1 .bp2-group151 .bp2-oval7 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 66px;
+  height              : 84px;
+  width               : 83px;
+  position            : absolute;
+  margin              : 0;
+  left                : 76px;
+}
+.bp2-screen1 .bp2-group151 .bp2-oval6 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 56px;
+  height              : 92px;
+  width               : 90px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp2-screen1 .bp2-group151 .bp2-oval5 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 72px;
+  height              : 142px;
+  width               : 140px;
+  position            : absolute;
+  margin              : 0;
+  left                : 134px;
+}
+.bp2-screen1 .bp2-group151 .bp2-oval8 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 46px;
+  height              : 24px;
+  width               : 25px;
+  position            : absolute;
+  margin              : 0;
+  left                : 265px;
+}
+.bp2-screen1 .bp2-group151 .bp2-oval9-copy {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 37px;
+  height              : 8px;
+  width               : 9px;
+  position            : absolute;
+  margin              : 0;
+  left                : 5px;
+}
+.bp2-screen1 .bp2-group151 .bp2-oval9-copy2 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 26px;
+  height              : 8px;
+  width               : 9px;
+  position            : absolute;
+  margin              : 0;
+  left                : 19px;
+}
+.bp2-screen1 .bp2-group151 .bp2-oval9-copy3 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 11px;
+  height              : 8px;
+  width               : 9px;
+  position            : absolute;
+  margin              : 0;
+  left                : 10px;
+}
+.bp2-screen1 .bp2-group151 .bp2-oval9-copy4 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 8px;
+  width               : 9px;
+  position            : absolute;
+  margin              : 0;
+  left                : 23px;
+}
+.bp2-screen1 .bp2-group3 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 338px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.bp2-screen1 .bp2-group3-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 600px;
+  align-items         : center;
+  height              : 213px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+/* .animate-appear prefix for appear animations */
+.animate-appear {
+  opacity             : 0;
+  display             : block;
+  -webkit-animation   : reveal 0.3s ease-in-out 1 normal forwards;
+  -moz-animation      : reveal 0.3s ease-in 1 normal forwards;
+  -o-animation        : reveal 0.3s ease-in-out 1 normal forwards;
+  animation           : reveal 0.3s ease-in-out 1 normal forwards;
+}
+.animate-disappear {
+  opacity             : 1;
+  display             : block;
+  -webkit-animation   : reveal 0.3s ease-in-out 1 reverse forwards;
+  -moz-animation      : reveal 0.3s ease-in 1 normal forwards;
+  -o-animation        : reveal 0.3s ease-in-out 1 reverse forwards;
+  animation           : reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.animate-nodelay {
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay  : 0;
+  animation-delay     : 0;
+}
+@-webkit-keyframes reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@-moz-keyframes reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@-o-keyframes reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@keyframes reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+.bp1-webpage {
+  width               : 100%;
+  min-width           : 1323px;
+  height              : 100vh;
+  min-height          : 3478px;
+  position            : relative;
+  overflow            : hidden;
+  margin              : 0px;
+  background-color    : rgba(253, 253, 253, 1.0);
+}
+a {
+  text-decoration     : none;
+}
+div {
+  -webkit-text-size-adjust: none;
+}
+.bp1-webpage .bp1-rectangle5 {
+  background-color    : rgba(253, 253, 253, 1.0);
+  top                 : 1025px;
+  height              : 1024px;
+  width               : 1440px;
+  position            : absolute;
+  margin              : 0;
+  left                : 3px;
+}
+.bp1-webpage .bp1-group17 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 1303px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.bp1-webpage .bp1-group17-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 983px;
+  align-items         : center;
+  height              : 412px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp1-webpage .bp1-group17 .bp1-adding-fairness-sta {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 522px;
+  position            : absolute;
+  margin              : 0;
+  left                : 789px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 36.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 44.0px;
+}
+.bp1-webpage .bp1-group17 .bp1-ranking-your-facts-i {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 113px;
+  height              : auto;
+  width               : 517px;
+  position            : absolute;
+  margin              : 0;
+  left                : 789px;
+  font-family         : "ProximaNova-Light", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 30.0px;
+  margin-bottom      : 40px;
+}
+.bp1-webpage .bp1-group17 .bp1-group10 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 412px;
+  width               : 712px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-webpage .bp1-group17 .bp1-group10 .bp1-rectangle11 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 412px;
+  width               : 712px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-webpage .bp1-group17 .bp1-group10 .bp1-group2 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 131px;
+  height              : 144px;
+  width               : 144px;
+  position            : absolute;
+  margin              : 0;
+  left                : 284px;
+  transition          : all 0.2s ease-in-out;
+}
+.bp1-webpage .bp1-group17 .bp1-group10 .bp1-group2:hover {
+  transform           : scale(1.1);
+}
+.bp1-webpage .bp1-group17 .bp1-group10 .bp1-group2 .bp1-oval {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 144px;
+  width               : 144px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-webpage .bp1-group17 .bp1-group10 .bp1-group2 .bp1-stroke660 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 57px;
+  height              : 30px;
+  width               : 30px;
+  position            : absolute;
+  margin              : 0;
+  left                : 60px;
+  opacity             : 0.9;
+}
+.bp1-webpage .bp1-group17 .bp1-group10 .bp1-group2 .bp1-stroke660 .bp1-stroke6601 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 31px;
+  width               : 31px;
+  position            : relative;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-webpage .bp1-group17 .bp1-group10 .bp1-group2 .bp1-oval2 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 36px;
+  height              : 71px;
+  width               : 71px;
+  position            : absolute;
+  margin              : 0;
+  left                : 36px;
+  opacity             : 0.9;
+}
+.bp1-webpage .bp1-group13 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 927px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.bp1-webpage .bp1-group13-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 2802px;
+  align-items         : center;
+  height              : 334px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp1-webpage .bp1-group13 .bp1-group24 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 77px;
+  height              : 58px;
+  width               : 170px;
+  position            : absolute;
+  margin              : 0;
+  left                : 722px;
+  transition          : all 0.2s ease-in-out;
+}
+.bp1-webpage .bp1-group13 .bp1-group24:hover {
+  transform           : scale(1.1);
+}
+.bp1-webpage .bp1-group13 .bp1-group24 .bp1-rectangle3 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 58px;
+  width               : 170px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-webpage .bp1-group13 .bp1-group24 .bp1-get-in-touch {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 19px;
+  height              : auto;
+  width               : 121px;
+  position            : absolute;
+  margin              : 0;
+  left                : 25px;
+  font-family         : "ProximaNova-Bold", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  letter-spacing      : 1.59px;
+  line-height         : 15.0px;
+}
+.bp1-webpage .bp1-group13 .bp1-group25 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 176px;
+  height              : 58px;
+  width               : 170px;
+  position            : absolute;
+  margin              : 0;
+  left                : 722px;
+  transition          : all 0.2s ease-in-out;
+}
+.bp1-webpage .bp1-group13 .bp1-group25:hover {
+  transform           : scale(1.1);
+}
+.bp1-webpage .bp1-group13 .bp1-group25 .bp1-rectangle3-copy2 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 58px;
+  width               : 170px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-webpage .bp1-group13 .bp1-group25 .bp1-drop-us-a-message {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 17px;
+  height              : auto;
+  width               : 136px;
+  position            : absolute;
+  margin              : 0;
+  left                : 17px;
+  font-family         : "ProximaNova-Bold", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  letter-spacing      : 1.59px;
+  line-height         : 15.0px;
+}
+.bp1-webpage .bp1-group13 .bp1-headerlogo {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 53px;
+  height              : 39px;
+  width               : 198px;
+  position            : absolute;
+  margin              : 0;
+  left                : 478px;
+}
+.bp1-webpage .bp1-group13 .bp1-group21 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 29px;
+  width               : 156px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-webpage .bp1-group13 .bp1-group21 .bp1-ranking {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 156px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(98, 101, 114, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 29.0px;
+}
+.bp1-webpage .bp1-group13 .bp1-group21 .bp1-facts {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 62px;
+  position            : absolute;
+  margin              : 0;
+  left                : 89px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(40, 142, 248, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 29.0px;
+}
+.bp1-webpage .bp1-group13 .bp1-githubsquare {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 146px;
+  height              : 28px;
+  width               : 28px;
+  position            : absolute;
+  margin              : 0;
+  left                : 727px;
+}
+.bp1-webpage .bp1-group13 .bp1-githubsquare .bp1-githubsquare1 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 28px;
+  width               : 28px;
+  position            : relative;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-webpage .bp1-group13 .bp1-bumped-into-issues {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 48px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 726px;
+  font-family         : "ProximaNova-Regular", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 17.0px;
+}
+.bp1-webpage .bp1-group13 .bp1-any-feedback-or-gene {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 146px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 726px;
+  font-family         : "ProximaNova-Regular", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 17.0px;
+}
+.bp1-webpage .bp1-group13 .bp1-a2017-data-responsi {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 309px;
+  height              : auto;
+  width               : 355px;
+  position            : absolute;
+  margin              : 0;
+  left                : 286px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(216, 217, 220, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 22.0px;
+}
+.bp1-webpage .bp1-group13 .bp1-more-info {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 5px;
+  height              : auto;
+  width               : 156px;
+  position            : absolute;
+  margin              : 0;
+  left                : 240px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(216, 217, 220, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 22.0px;
+}
+.bp1-webpage .bp1-group13 .bp1-a-project-by {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 7px;
+  height              : auto;
+  width               : 156px;
+  position            : absolute;
+  margin              : 0;
+  left                : 480px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(216, 217, 220, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 22.0px;
+}
+.bp1-webpage .bp1-group13 .bp1-contact-us {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 7px;
+  height              : auto;
+  width               : 156px;
+  position            : absolute;
+  margin              : 0;
+  left                : 726px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(216, 217, 220, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 22.0px;
+}
+.bp1-webpage .bp1-group13 .bp1-twittersquare {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 246px;
+  height              : 28px;
+  width               : 28px;
+  position            : absolute;
+  margin              : 0;
+  left                : 770px;
+}
+.bp1-webpage .bp1-group13 .bp1-twittersquare .bp1-twittersquare1 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 28px;
+  width               : 28px;
+  position            : relative;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-webpage .bp1-group13 .bp1-home-about-learning {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 43px;
+  height              : auto;
+  width               : 153px;
+  position            : absolute;
+  margin              : 0;
+  left                : 247px;
+  font-family         : "ProximaNova-Regular", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 26.0px;
+}
+.bp1-webpage .bp1-rectangle4 {
+  background-color    : rgba(40, 142, 248, 1.0);
+  top                 : 2332px;
+  height              : 390px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-webpage .bp1-group12 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 596px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.bp1-webpage .bp1-group12-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 2421px;
+  align-items         : center;
+  height              : 198px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp1-webpage .bp1-group12 .bp1-upload-or-data-now-o {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 70px;
+  height              : auto;
+  width               : 598px;
+  position            : absolute;
+  margin              : 0;
+  left                : -1px;
+  font-family         : "ProximaNova-Regular", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 30.0px;
+}
+.bp1-webpage .bp1-group12 .bp1-ready-to-begin {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 524px;
+  position            : absolute;
+  margin              : 0;
+  left                : 36px;
+  font-family         : "ProximaNova-Bold", Helvetica, Arial, serif;
+  font-size           : 48.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.34px;
+  line-height         : 63.0px;
+}
+.bp1-webpage .bp1-group12 .bp1-group22 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 137px;
+  height              : 61px;
+  width               : 184px;
+  position            : absolute;
+  margin              : 0;
+  left                : 81px;
+  transition          : all 0.2s ease-in-out;
+}
+.bp1-webpage .bp1-group12 .bp1-group22:hover {
+  transform           : scale(1.1);
+}
+.bp1-webpage .bp1-group12 .bp1-group22 .bp1-rectangle31 {
+  background-color    : rgba(255, 255, 255, 1.0);
+  top                 : 0px;
+  height              : 61px;
+  width               : 184px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  border-radius       : 8px;
+}
+.bp1-webpage .bp1-group12 .bp1-group22 .bp1-get-started {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 22px;
+  height              : auto;
+  width               : 147px;
+  position            : absolute;
+  margin              : 0;
+  left                : 18px;
+  font-family         : "ProximaNova-Bold", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(40, 142, 248, 1.0);
+  text-align          : center;
+  letter-spacing      : 1.11px;
+  line-height         : 17.0px;
+}
+.bp1-webpage .bp1-group12 .bp1-group23 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 138px;
+  height              : 56px;
+  width               : 184px;
+  position            : absolute;
+  margin              : 0;
+  left                : 298px;
+  transition          : all 0.2s ease-in-out;
+}
+.bp1-webpage .bp1-group12 .bp1-group23:hover {
+  transform           : scale(1.1);
+}
+.bp1-webpage .bp1-group12 .bp1-group23 .bp1-rectangle3-copy {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 56px;
+  width               : 184px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  border-radius       : 8px;
+  border-style        : solid;
+  border-width        : 3px;
+  border-color        : rgba(255, 255, 255, 1.0);
+}
+.bp1-webpage .bp1-group12 .bp1-group23 .bp1-contact-us1 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 21px;
+  height              : auto;
+  width               : 147px;
+  position            : absolute;
+  margin              : 0;
+  left                : 18px;
+  font-family         : "ProximaNova-Bold", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  letter-spacing      : 1.11px;
+  line-height         : 17.0px;
+}
+
+.bp1-webpage .bp1-group16 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 1281px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.bp1-webpage .bp1-group16-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 1490px;
+  align-items         : center;
+  height              : 653px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp1-webpage .bp1-group16 .bp1-rectangle12 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 115px;
+  height              : 533px;
+  width               : 387px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-webpage .bp1-group16 .bp1-rectangle12-copy {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 115px;
+  height              : 533px;
+  width               : 387px;
+  position            : absolute;
+  margin              : 0;
+  left                : 447px;
+}
+.bp1-webpage .bp1-group16 .bp1-group6 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 200px;
+  height              : 150px;
+  width               : 140px;
+  position            : absolute;
+  margin              : 0;
+  left                : 124px;
+}
+.bp1-webpage .bp1-group16 .bp1-group6 .bp1-fill2632 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 30px;
+  height              : 70px;
+  width               : 140px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-webpage .bp1-group16 .bp1-group6 .bp1-fill2633 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 25px;
+  width               : 140px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-webpage .bp1-group16 .bp1-group6 .bp1-fill2634 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 50px;
+  height              : 100px;
+  width               : 55px;
+  position            : absolute;
+  margin              : 0;
+  left                : 40px;
+}
+.bp1-webpage .bp1-group16 .bp1-group5 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 200px;
+  height              : 150px;
+  width               : 150px;
+  position            : absolute;
+  margin              : 0;
+  left                : 566px;
+}
+.bp1-webpage .bp1-group16 .bp1-group5 .bp1-fill2134 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 150px;
+  width               : 120px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-webpage .bp1-group16 .bp1-group5 .bp1-fill2135 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 35px;
+  height              : 68px;
+  width               : 35px;
+  position            : absolute;
+  margin              : 0;
+  left                : 115px;
+}
+.bp1-webpage .bp1-group16 .bp1-group5 .bp1-fill2136 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 135px;
+  height              : 15px;
+  width               : 25px;
+  position            : absolute;
+  margin              : 0;
+  left                : 125px;
+}
+.bp1-webpage .bp1-group16 .bp1-group5 .bp1-fill2137 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 95px;
+  height              : 35px;
+  width               : 25px;
+  position            : absolute;
+  margin              : 0;
+  left                : 125px;
+}
+.bp1-webpage .bp1-group16 .bp1-rectangle12-copy2 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 115px;
+  height              : 533px;
+  width               : 387px;
+  position            : absolute;
+  margin              : 0;
+  left                : 894px;
+}
+.bp1-webpage .bp1-group16 .bp1-group4 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 200px;
+  height              : 150px;
+  width               : 115px;
+  position            : absolute;
+  margin              : 0;
+  left                : 1031px;
+}
+.bp1-webpage .bp1-group16 .bp1-group4 .bp1-fill4886 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 20px;
+  height              : 130px;
+  width               : 115px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-webpage .bp1-group16 .bp1-group4 .bp1-fill4887 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 40px;
+  width               : 55px;
+  position            : absolute;
+  margin              : 0;
+  left                : 30px;
+}
+.bp1-webpage .bp1-group16 .bp1-oval3 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 157px;
+  height              : 236px;
+  width               : 236px;
+  position            : absolute;
+  margin              : 0;
+  left                : 523px;
+}
+.bp1-webpage .bp1-group16 .bp1-oval3-copy2 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 157px;
+  height              : 236px;
+  width               : 236px;
+  position            : absolute;
+  margin              : 0;
+  left                : 76px;
+}
+.bp1-webpage .bp1-group16 .bp1-oval3-copy {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 157px;
+  height              : 236px;
+  width               : 236px;
+  position            : absolute;
+  margin              : 0;
+  left                : 970px;
+}
+.bp1-webpage .bp1-group16 .bp1-upload-your-data {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 408px;
+  height              : auto;
+  width               : 247px;
+  position            : absolute;
+  margin              : 0;
+  left                : 70px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 32.0px;
+}
+.bp1-webpage .bp1-group16 .bp1-set-your-parameters {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 408px;
+  height              : auto;
+  width               : 283px;
+  position            : absolute;
+  margin              : 0;
+  left                : 499px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 32.0px;
+}
+.bp1-webpage .bp1-group16 .bp1-check-your-facts {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 408px;
+  height              : auto;
+  width               : 228px;
+  position            : absolute;
+  margin              : 0;
+  left                : 974px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 32.0px;
+}
+.bp1-webpage .bp1-group16 .bp1-smoothly-easy-uploa {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 456px;
+  height              : auto;
+  width               : 247px;
+  position            : absolute;
+  margin              : 0;
+  left                : 70px;
+  font-family         : "ProximaNova-Light", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 30.0px;
+}
+.bp1-webpage .bp1-group16 .bp1-add-in-the-data-you {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 456px;
+  height              : auto;
+  width               : 247px;
+  position            : absolute;
+  margin              : 0;
+  left                : 515px;
+  font-family         : "ProximaNova-Light", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 30.0px;
+}
+.bp1-webpage .bp1-group16 .bp1-analyze-the-results {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 456px;
+  height              : auto;
+  width               : 247px;
+  position            : absolute;
+  margin              : 0;
+  left                : 964px;
+  font-family         : "ProximaNova-Light", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 30.0px;
+}
+.bp1-webpage .bp1-group16 .bp1-group20 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 104px;
+  width               : 811px;
+  position            : absolute;
+  margin              : 0;
+  left                : 224px;
+}
+.bp1-webpage .bp1-group16 .bp1-group20 .bp1-get-there-in {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 598px;
+  position            : absolute;
+  margin              : 0;
+  left                : -1px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 36.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 63.0px;
+}
+.bp1-webpage .bp1-group16 .bp1-group20 .bp1-a3-simple-steps {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 598px;
+  position            : absolute;
+  margin              : 0;
+  left                : 214px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 36.0px;
+  color               : rgba(40, 142, 248, 1.0);
+  text-align          : center;
+  letter-spacing      : -0.41px;
+  line-height         : 63.0px;
+}
+.bp1-webpage .bp1-group18 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 1586px;
+  margin-right        : -129px;
+  height              : 100%;
+  pointer-events      : auto;
+  margin-left         : 129px;
+  position            : relative;
+}
+.bp1-webpage .bp1-group18-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 34px;
+  align-items         : center;
+  height              : 725px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp1-webpage .bp1-group18 .bp1-group3 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 150px;
+  height              : 575px;
+  width               : 917px;
+  position            : absolute;
+  margin              : 0;
+  left                : 675px;
+}
+.bp1-webpage .bp1-group18 .bp1-group3 .bp1-group {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 575px;
+  width               : 917px;
+  position            : relative;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-webpage .bp1-group18 .bp1-group3 .bp1-group .bp1-imac {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 536px;
+  width               : 648px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-webpage .bp1-group18 .bp1-group3 .bp1-group .bp1-imac .bp1-edge {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 529px;
+  height              : 7px;
+  width               : 198px;
+  position            : absolute;
+  margin              : 0;
+  left                : 225px;
+}
+.bp1-webpage .bp1-group18 .bp1-group3 .bp1-group .bp1-imac .bp1-stand {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 445px;
+  height              : 89px;
+  width               : 199px;
+  position            : absolute;
+  margin              : 0;
+  left                : 225px;
+}
+.bp1-webpage .bp1-group18 .bp1-group3 .bp1-group .bp1-imac .bp1-screen-bottom {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 386px;
+  height              : 60px;
+  width               : 648px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-webpage .bp1-group18 .bp1-group3 .bp1-group .bp1-imac .bp1-screen-top {
+  background-color    : rgba(243, 243, 243, 1.0);
+  top                 : 0px;
+  height              : 386px;
+  width               : 648px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  border-radius       : 11px;
+  border-style        : solid;
+  border-width        : 19px;
+  border-color        : rgba(17, 17, 17, 1.0);
+}
+.bp1-webpage .bp1-group18 .bp1-group3 .bp1-group .bp1-imac .bp1-screen-content {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 25px;
+  height              : 336px;
+  width               : 599px;
+  position            : absolute;
+  margin              : 0;
+  left                : 25px;
+}
+.bp1-webpage .bp1-group18 .bp1-group3 .bp1-group .bp1-imac .bp1-toolbar {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 24px;
+  height              : 12px;
+  width               : 599px;
+  position            : absolute;
+  margin              : 0;
+  left                : 23px;
+  opacity             : 0.79;
+}
+.bp1-webpage .bp1-group18 .bp1-group3 .bp1-group .bp1-imac .bp1-camera {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 9px;
+  height              : 6px;
+  width               : 6px;
+  position            : absolute;
+  margin              : 0;
+  left                : 320px;
+}
+.bp1-webpage .bp1-group18 .bp1-group3 .bp1-group .bp1-macbook-pro {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 265px;
+  height              : 309px;
+  width               : 522px;
+  position            : absolute;
+  margin              : 0;
+  left                : 394px;
+}
+.bp1-webpage .bp1-group18 .bp1-group3 .bp1-group .bp1-macbook-pro .bp1-shadow {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 296px;
+  height              : 12px;
+  width               : 523px;
+  position            : absolute;
+  margin              : 0;
+  left                : -1px;
+}
+.bp1-webpage .bp1-group18 .bp1-group3 .bp1-group .bp1-macbook-pro .bp1-screen-body {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 289px;
+  width               : 427px;
+  position            : absolute;
+  margin              : 0;
+  left                : 48px;
+}
+.bp1-webpage .bp1-group18 .bp1-group3 .bp1-group .bp1-macbook-pro .bp1-keyboard-lower {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 285px;
+  height              : 20px;
+  width               : 523px;
+  position            : absolute;
+  margin              : 0;
+  left                : 1px;
+}
+.bp1-webpage .bp1-group18 .bp1-group3 .bp1-group .bp1-macbook-pro .bp1-keyboard-upper {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 285px;
+  height              : 12px;
+  width               : 523px;
+  position            : absolute;
+  margin              : 0;
+  left                : 1px;
+}
+.bp1-webpage .bp1-group18 .bp1-group3 .bp1-group .bp1-macbook-pro .bp1-notch {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 286px;
+  height              : 9px;
+  width               : 75px;
+  position            : absolute;
+  margin              : 0;
+  left                : 225px;
+}
+.bp1-webpage .bp1-group18 .bp1-group3 .bp1-group .bp1-macbook-pro .bp1-screen {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 18px;
+  height              : 257px;
+  width               : 398px;
+  position            : absolute;
+  margin              : 0;
+  left                : 63px;
+}
+.bp1-webpage .bp1-group18 .bp1-group3 .bp1-group .bp1-macbook-pro .bp1-toolbar1 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 17px;
+  height              : 12px;
+  width               : 398px;
+  position            : absolute;
+  margin              : 0;
+  left                : 61px;
+  opacity             : 0.79;
+}
+.bp1-webpage .bp1-group18 .bp1-group3 .bp1-group .bp1-macbook-pro .bp1-camera1 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 7px;
+  height              : 8px;
+  width               : 7px;
+  position            : absolute;
+  margin              : 0;
+  left                : 258px;
+}
+.bp1-webpage .bp1-group18 .bp1-group9 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 513px;
+  height              : 73px;
+  width               : 196px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  transition          : all 0.2s ease-in-out;
+}
+.bp1-webpage .bp1-group18 .bp1-group9:hover {
+  transform           : scale(1.1);
+}
+.bp1-webpage .bp1-group18 .bp1-group9 .bp1-rectangle32 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 73px;
+  width               : 196px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-webpage .bp1-group18 .bp1-group9 .bp1-get-started1 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 25px;
+  height              : auto;
+  width               : 148px;
+  position            : absolute;
+  margin              : 0;
+  left                : 24px;
+  font-family         : "ProximaNova-Bold", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  letter-spacing      : 1.59px;
+  line-height         : 17.0px;
+}
+.bp1-webpage .bp1-group18 .bp1-ranking-facts-genera {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 435px;
+  height              : auto;
+  width               : 524px;
+  position            : absolute;
+  margin              : 0;
+  left                : 6px;
+  font-family         : "ProximaNova-Light", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 22.0px;
+}
+.bp1-webpage .bp1-group18 .bp1-nutritional-labels-f {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 290px;
+  height              : auto;
+  width               : 524px;
+  position            : absolute;
+  margin              : 0;
+  left                : 6px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 58.0px;
+  color               : rgba(92, 95, 109, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 70.0px;
+}
+.bp1-webpage .bp1-group18 .bp1-group8 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 30px;
+  width               : 174px;
+  position            : absolute;
+  margin              : 0;
+  left                : 6px;
+}
+.bp1-webpage .bp1-group18 .bp1-group8 .bp1-group19 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 4px;
+  height              : 24px;
+  width               : 136px;
+  position            : absolute;
+  margin              : 0;
+  left                : 38px;
+}
+.bp1-webpage .bp1-group18 .bp1-group8 .bp1-group19 .bp1-ranking1 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 125px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 24.0px;
+}
+.bp1-webpage .bp1-group18 .bp1-group8 .bp1-group19 .bp1-facts1 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 62px;
+  position            : absolute;
+  margin              : 0;
+  left                : 74px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(40, 142, 248, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 24.0px;
+}
+.bp1-webpage .bp1-group18 .bp1-group8 .bp1-group7 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 30px;
+  width               : 30px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-webpage .bp1-group18 .bp1-group8 .bp1-group7 .bp1-rectangle2 {
+  background-color    : rgba(40, 142, 248, 1.0);
+  top                 : 0px;
+  height              : 30px;
+  width               : 30px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  border-radius       : 6px;
+}
+.bp1-webpage .bp1-group18 .bp1-group8 .bp1-group7 .bp1-i-con {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 11px;
+  height              : auto;
+  width               : 24px;
+  position            : absolute;
+  margin              : 0;
+  left                : 7px;
+  font-family         : "ProximaNova-Regular", Helvetica, Arial, serif;
+  font-size           : 13.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : left;
+  letter-spacing      : -0.41px;
+  line-height         : 9.0px;
+}
+.bp1-webpage .bp1-group18 .bp1-group11 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 7px;
+  height              : 17px;
+  width               : 129px;
+  position            : absolute;
+  margin              : 0;
+  left                : 1205px;
+}
+.bp1-webpage .bp1-group18 .bp1-group11 .bp1-about {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 49px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : left;
+  letter-spacing      : 1.24px;
+  line-height         : 17.0px;
+}
+.bp1-webpage .bp1-group18 .bp1-group11 .bp1-contact {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 63px;
+  position            : absolute;
+  margin              : 0;
+  left                : 67px;
+  font-family         : "ProximaNova-Semibold", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(96, 97, 99, 1.0);
+  text-align          : left;
+  letter-spacing      : 1.24px;
+  line-height         : 17.0px;
+}
+.bp1-webpage .bp1-group15 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  width               : 1407px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.bp1-webpage .bp1-group15-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 3093px;
+  align-items         : center;
+  height              : 829px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.bp1-webpage .bp1-group15 .bp1-oval9 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 187px;
+  height              : 36px;
+  width               : 34px;
+  position            : absolute;
+  margin              : 0;
+  left                : 57px;
+}
+.bp1-webpage .bp1-group15 .bp1-oval4 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 187px;
+  height              : 586px;
+  width               : 542px;
+  position            : absolute;
+  margin              : 0;
+  left                : 865px;
+}
+.bp1-webpage .bp1-group15 .bp1-oval7 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 252px;
+  height              : 325px;
+  width               : 301px;
+  position            : absolute;
+  margin              : 0;
+  left                : 282px;
+}
+.bp1-webpage .bp1-group15 .bp1-oval6 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 218px;
+  height              : 357px;
+  width               : 330px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.bp1-webpage .bp1-group15 .bp1-oval5 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 277px;
+  height              : 552px;
+  width               : 510px;
+  position            : absolute;
+  margin              : 0;
+  left                : 490px;
+}
+.bp1-webpage .bp1-group15 .bp1-oval8 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 177px;
+  height              : 94px;
+  width               : 88px;
+  position            : absolute;
+  margin              : 0;
+  left                : 971px;
+}
+.bp1-webpage .bp1-group15 .bp1-oval9-copy {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 142px;
+  height              : 36px;
+  width               : 34px;
+  position            : absolute;
+  margin              : 0;
+  left                : 22px;
+}
+.bp1-webpage .bp1-group15 .bp1-oval9-copy2 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 106px;
+  height              : 36px;
+  width               : 34px;
+  position            : absolute;
+  margin              : 0;
+  left                : 70px;
+}
+.bp1-webpage .bp1-group15 .bp1-oval9-copy3 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 43px;
+  height              : 36px;
+  width               : 35px;
+  position            : absolute;
+  margin              : 0;
+  left                : 38px;
+}
+.bp1-webpage .bp1-group15 .bp1-oval9-copy4 {
+  background-color    : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 36px;
+  width               : 35px;
+  position            : absolute;
+  margin              : 0;
+  left                : 86px;
+}
+/* .animate-appear prefix for appear animations */
+.animate-appear {
+  opacity             : 0;
+  display             : block;
+  -webkit-animation   : reveal 0.3s ease-in-out 1 normal forwards;
+  -moz-animation      : reveal 0.3s ease-in 1 normal forwards;
+  -o-animation        : reveal 0.3s ease-in-out 1 normal forwards;
+  animation           : reveal 0.3s ease-in-out 1 normal forwards;
+}
+.animate-disappear {
+  opacity             : 1;
+  display             : block;
+  -webkit-animation   : reveal 0.3s ease-in-out 1 reverse forwards;
+  -moz-animation      : reveal 0.3s ease-in 1 normal forwards;
+  -o-animation        : reveal 0.3s ease-in-out 1 reverse forwards;
+  animation           : reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.animate-nodelay {
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay  : 0;
+  animation-delay     : 0;
+}
+@-webkit-keyframes reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@-moz-keyframes reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@-o-keyframes reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@keyframes reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@media screen and (max-width: 767px) {
+  .bp2-screen1 {
+    display             : block;
+  }
+  .bp3-webpage-tablet {
+    display             : none;
+  }
+  .bp4-webpage1024 {
+    display             : none;
+  }
+  .bp1-webpage {
+    display             : none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .bp2-screen1 {
+    display             : none;
+  }
+  .bp3-webpage-tablet {
+    display             : block;
+  }
+  .bp4-webpage1024 {
+    display             : none;
+  }
+  .bp1-webpage {
+    display             : none;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1322px) {
+  .bp2-screen1 {
+    display             : none;
+  }
+  .bp3-webpage-tablet {
+    display             : none;
+  }
+  .bp4-webpage1024 {
+    display             : block;
+  }
+  .bp1-webpage {
+    display             : none;
+  }
+}
+@media screen and (min-width: 1323px) {
+  .bp2-screen1 {
+    display             : none;
+  }
+  .bp3-webpage-tablet {
+    display             : none;
+  }
+  .bp4-webpage1024 {
+    display             : none;
+  }
+  .bp1-webpage {
+    display             : block;
+  }
+}

@@ -1,0 +1,875 @@
+
+{% load static %}
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+<meta name="description" content="parameter_original">
+<meta name="author" content="keyang">
+
+<link href="{% static 'icons/frontpage/favicon.ico' %}" rel="shortcut icon"/>
+ <!-- Bootstrap Core CSS -->
+<link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="{% static 'bootstrap-parameter/css/boot-parameter.css' %}" rel="stylesheet">
+<!-- Custom Fonts -->
+<link href="{% static 'font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+
+<!-- jQuery -->
+<script src="{% static 'jquery/jquery-3.2.1.min.js' %}"></script>
+<!-- dataTable -->
+<link href="{% static 'datatables/media/css/jquery.dataTables.css' %}" rel="stylesheet">
+<script src="{% static 'datatables/media/js/jquery.dataTables.js' %}"></script>
+
+<!-- bootstrap-select -->
+<link href="{% static 'bootstrap-parameter/css/bootstrap-select.min.css' %}" rel="stylesheet">
+
+<!-- Highcharts JavaScript -->
+<script src="{% static 'highcharts/code/highcharts.js' %}"></script>
+<script src="{% static 'highcharts/code/modules/exporting.js' %}"></script>
+<script src="https://code.highcharts.com/modules/gray.js"></script>
+
+
+</head>
+
+<body>
+<nav class="navbar navbar-light bg-light navbar-static-top" role="navigation">
+
+    <a class="navbar-brand" href="{% url 'rankingfacts:base' %}">
+        <ul class="nav navbar-top-links navbar-left">
+            <li>
+                 <div class="title-ranking">
+                    Ranking
+                </div>
+            </li>
+            <li>
+                <div class="title-facts">
+                    Facts
+                </div>
+            </li>
+        </ul>
+    </a>
+    <ul class="nav navbar-top-links navbar-center">
+        <li>
+            <a href="{% url 'rankingfacts:data_process' %}">
+                <div class="title-orig-data">
+                    <i class="fa fa-table fa-fw fa-1x"></i> Original data
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'rankingfacts:norm_process' %}">
+                <div class="title-proc-data">
+                    <i class="fa fa-wrench fa-fw fa-1x"></i> Normalized and standardized data
+                </div>
+            </a>
+        </li>
+    </ul>
+    <!-- /.navbar-top-links -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <span></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h3 class="page-header">Normalized and standardized data</h3>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <span><br></span>
+        </div>
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <table id="proc_data_table" class="display nowrap" cellspacing="0" width="100%">
+            </table>
+        </div>
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <span><br><br><br></span>
+        </div>
+    </div>
+    <!-- /.section -->
+    <form role="form" action="" onsubmit="return validateInputAtt()" method="post"> {% csrf_token %}
+    <div class="row" style="background-color: whitesmoke">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h3 class="page-header">Visualize Your Data</h3>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <div class="row" style="background-color: whitesmoke">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <span><br></span>
+        </div>
+    </div>
+    <!-- /.row -->
+    <div class="row" style="background-color: whitesmoke">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div id="att_select" class="list-group">
+                {% for atti in passed_column_name %}
+                  <a id="{{ atti | safe }}" class="list-group-item list-group-item-action" data-toggle="list" href="#{{ atti | safe }}" role="tab" aria-controls="{{ atti | safe }}">{{ atti }}</a>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+            {% for atti in passed_column_name %}
+            <div id="{{ atti | safe }}_distribution" style="display:none" class="col-lg-12">
+                {% if atti in passed_cate_atts %}
+                    <div id="{{ atti | safe }}_barchart"></div>
+                {% else %}
+                    <div id="{{ atti | safe }}_histogram"></div>
+                {% endif %}
+            </div>
+            {% endfor %}
+            <!-- his col-lg-8 -->
+        </div>
+    </div>
+    <div class="row" style="background-color: whitesmoke">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <span><br></span>
+        </div>
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <span><br><br><br></span>
+        </div>
+    </div>
+    <!-- /.section -->
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h3 class="page-header">Choose at least one binary attribute for fairness check</h3>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <span><br></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <p>The chosen attributes will be treated as sensitive attributes to use in several fairness oracles in order to check
+                whether there is discrimination against groups defined by these attributes. For example, ProPublica’s analysis of
+                Northpointe’s tool, called COMPAS, found that black defendants were far more likely than white defendants to be
+                incorrectly judged to be at a higher risk of recidivism, while white defendants were more likely than black defendants
+                to be incorrectly flagged as low risk.
+            </p>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+            <div class="form-group" id="sensi_checkboxes">
+                <div class="row">
+                {% for atti_name,atti_id,atti_row in num_binary_att %}
+                     {% if atti_row == "row" %}
+                         <div class= "col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                              <input type='hidden' name="{{atti_id | safe}}_sensi_checks" value="{{atti_name | safe}}_unchecked">
+                              <input type="checkbox" name="{{atti_id | safe}}_sensi_checks" value="{{atti_name | safe}}" id="{{atti_id | safe}}_sensi_checks" />
+                              <label class="list-group-item" for="{{atti_id | safe}}_sensi_checks">{{ atti_name }}</label>
+                         </div>
+                         <div class="visible-sm col-sm-12"><span><br></span></div>
+                         <div class="visible-xs col-xs-12"><span><br></span></div>
+                     {% else %}
+                         </div>
+                         <div class="visible-md col-md-12"><span><br></span></div>
+                         <div class="visible-lg col-lg-12"><span><br></span></div>
+
+                         <div class="row">
+                         <div class= "col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                              <input type='hidden' name="{{atti_id | safe}}_sensi_checks" value="{{atti_name | safe}}_unchecked">
+                              <input type="checkbox" name="{{atti_id | safe}}_sensi_checks" value="{{atti_name | safe}}" id="{{atti_id | safe}}_sensi_checks" />
+                              <label class="list-group-item" for="{{atti_id | safe}}_sensi_checks">{{ atti_name }}</label>
+                         </div>
+                         <div class="visible-sm col-sm-12"><span><br></span></div>
+                         <div class="visible-xs col-xs-12"><span><br></span></div>
+                     {% endif %}
+                {% endfor %}
+                 </div>
+            </div>
+            <!-- binary atts col-lg-8 -->
+        </div>
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <span><br><br><br></span>
+        </div>
+    </div>
+    <!-- /.section -->
+    <div class="row" style="background-color: whitesmoke">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h3 class="page-header">Choose at least one categorical attribute for diversity check</h3>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <div class="row" style="background-color: whitesmoke">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <span><br></span>
+        </div>
+    </div>
+    <div class="row" style="background-color: whitesmoke">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <p>Diversity analysis shows the proportion of groups defined by the chosen attributes
+                in the top 10 and overall generated ranking.
+            </p>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+            <div class="form-group" id="cate_checkboxes">
+                <div class="row">
+                {% for atti_name,atti_id,atti_row in num_cat_att %}
+                     {% if atti_row == "row" %}
+                         <div class= "col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                              <input type='hidden' name="{{atti_id | safe}}_cate_checks" value="{{atti_name | safe}}_unchecked">
+                              <input type="checkbox" name="{{atti_id | safe}}_cate_checks" value="{{atti_name | safe}}" id="{{atti_id | safe}}_cate_checks" />
+                              <label class="list-group-item" for="{{atti_id | safe}}_cate_checks">{{ atti_name }}</label>
+                         </div>
+                         <div class="visible-sm col-sm-12"><span><br></span></div>
+                         <div class="visible-xs col-xs-12"><span><br></span></div>
+                     {% else %}
+                         </div>
+
+                         <div class="visible-md col-md-12"><span><br></span></div>
+                         <div class="visible-lg col-lg-12"><span><br></span></div>
+
+                         <div class="row">
+                         <div class= "col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                              <input type='hidden' name="{{atti_id | safe}}_cate_checks" value="{{atti_name | safe}}_unchecked">
+                              <input type="checkbox" name="{{atti_id | safe}}_cate_checks" value="{{atti_name | safe}}" id="{{atti_id | safe}}_cate_checks" />
+                              <label class="list-group-item" for="{{atti_id | safe}}_cate_checks">{{ atti_name }}</label>
+                         </div>
+                         <div class="visible-sm col-sm-12"><span><br></span></div>
+                         <div class="visible-xs col-xs-12"><span><br></span></div>
+                     {% endif %}
+                {% endfor %}
+                 </div>
+            </div>
+            <!-- cate atts col-lg-8 -->
+        </div>
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <span><br><br><br></span>
+        </div>
+    </div>
+    <!-- /.section -->
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h3 class="page-header">Specify your ranking function</h3>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <span><br></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <p>Specify the attributes that you want to include in the ranking function and customize its weight and order.
+            </p>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+
+            <div class="form-group" id="rank_checkboxes">
+                <div class="row">
+                {% for atti_name,atti_id,atti_row in num_all_att %}
+                     {% if atti_row == "row" %}
+                         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class= "row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                  <input type='hidden' name="{{atti_id | safe}}_checks" value="{{atti_name | safe}}_unchecked">
+                                  <input type="checkbox" name="{{atti_id | safe}}_checks" value="{{atti_name | safe}}" id="{{atti_id | safe}}_checks" />
+                                  <label class="list-group-item" for="{{atti_id | safe}}_checks">{{ atti_name }}</label>
+                                </div>
+                            </div>
+                            <div class="form-group" id="{{ atti_id | safe }}_para" style="display: none">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="row">
+                                        <label> Weight</label>
+                                        <input id="{{ atti_id | safe}}_weight" name="{{ atti_id | safe}}_weight" class="form-control" placeholder="1.0">
+                                    </div>
+                                    <div class="row">
+                                        <label> Sort by</label>
+                                        <select id="{{ atti_id | safe}}_order" name="{{ atti_id | safe}}_order" class=form-control>
+                                            <option value="higher">Higher to lower</option>
+                                            <option value="lower">Lower to higher</option>
+                                        </select>
+                                    </div>
+                                    <span><br></span>
+                                </div>
+                            </div>
+                            <div class="visible-sm col-sm-12"><span><br></span></div>
+                            <div class="visible-xs col-xs-12"><span><br></span></div>
+                         </div>
+
+                     {% else %}
+                         </div>
+
+                         <div class="visible-md col-md-12"><span><br></span></div>
+                         <div class="visible-lg col-lg-12"><span><br></span></div>
+
+                         <div class="row">
+                             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <div class= "row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                      <input type='hidden' name="{{atti_id | safe}}_checks" value="{{atti_name | safe}}_unchecked">
+                                      <input type="checkbox" name="{{atti_id | safe}}_checks" value="{{atti_name | safe}}" id="{{atti_id | safe}}_checks" />
+                                      <label class="list-group-item" for="{{atti_id | safe}}_checks">{{ atti_name }}</label>
+                                    </div>
+                                </div>
+                                <div class="form-group" id="{{ atti_id | safe }}_para" style="display: none">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <label> Weight</label>
+                                            <input id="{{ atti_id | safe}}_weight" name="{{ atti_id | safe}}_weight" class="form-control" placeholder="1.0">
+                                        </div>
+                                        <div class="row">
+                                            <label> Sort by</label>
+                                            <select id="{{ atti_id | safe}}_order" name="{{ atti_id | safe}}_order" class=form-control>
+                                                <option value="higher">Higher to lower</option>
+                                                <option value="lower">Lower to higher</option>
+                                            </select>
+                                        </div>
+                                        <span><br></span>
+                                    </div>
+                                </div>
+                                <div class="visible-sm col-sm-12"><span><br></span></div>
+                                <div class="visible-xs col-xs-12"><span><br></span></div>
+                             </div>
+                     {% endif %}
+                {% endfor %}
+                 </div>
+            </div>
+            <!-- ranking function atts col-lg-8 -->
+        </div>
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <span><br><br><br></span>
+        </div>
+    </div>
+    <!-- /.section -->
+    <div class="row">
+        <div class="col-lg-5 col-md-4 col-sm-4 col-xs-4">
+            <span><br></span>
+        </div>
+        <div class="col-lg-5 col-md-4 col-sm-4 col-xs-8">
+            <input id="btn_ranking" type="submit" class="btn btn-success btn-lg" value="Preview Ranking!"/>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-4">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <span><br><br><br></span>
+        </div>
+    </div>
+     <!-- /.section -->
+    </form> <!-- /.form data -->
+    <div class="row" id="generated_score_div" style="display: none;">
+        <div class="row" style="background-color: whitesmoke">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h3 class="page-header">Generated Ranking</h3>
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+        <div class="row" style="background-color: whitesmoke">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <span><br></span>
+            </div>
+        </div>
+        <!-- /.row -->
+        <div class="row" style="background-color: whitesmoke">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <table id="ranking_table" class="display nowrap" cellspacing="0" width="100%"> </table>
+            </div>
+        </div>
+        <!-- /.row -->
+        <div class="row" style="background-color: whitesmoke">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <span><br></span>
+            </div>
+        </div>
+    </div>
+    <!-- /.section -->
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <span><br><br><br></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1 col-md-1 col-sm-1">
+             <span>&nbsp;</span>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+            <a href="{% url 'rankingfacts:upload_data' %}" class="btn btn-default btn-lg">
+                <span class="glyphicon glyphicon-menu-left"></span>
+                Try New Data
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-2 col-sm-2 col-xs-1">
+            <span><br></span>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+            <form style="display:inline;" role="form" action="{% url 'rankingfacts:nutrition_facts' %}" onsubmit="return validateRankPreview()" method="post">{% csrf_token %}
+                <button type="submit" class="btn btn-warning btn-lg">
+                    Generate Ranking Facts
+                <span class="glyphicon glyphicon-menu-right"></span></button>
+            </form><!-- /.form -->
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-1">
+             <span></span>
+        </div>
+        <!-- /.row -->
+    </div>
+
+</div>
+<!-- /.container -->
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <span><br><br><br></span>
+    </div>
+</div>
+<!-- Footer -->
+<footer class="py-5 bg-white">
+  <div class="container">
+    <p class="m-0 text-center text-dark">
+        © 2018 <a href="https://dataresponsibly.github.io/">Data Responsibly</a> | <a href="https://github.com/DataResponsibly/RankingFacts">Code</a>  | <a href="https://dataresponsibly.github.io/people/">Contact us</a>
+    </p>
+  </div>
+  <!-- /.container -->
+</footer>
+
+<!-- define function to compare to arrays-->
+<script type="text/javascript" language="JavaScript">
+    function arraysEqual(a, b) {
+      if (a === b) return true;
+      if (a == null || b == null) return false;
+      if (a.length != b.length) return false;
+      // Don't care about the order of the elements inside
+      // the array, sort both arrays first.
+      a.sort();
+      b.sort();
+      for (var i = 0; i < a.length; ++i) {
+        if (a[i] !== b[i]) return false;
+      }
+      return true;
+    }
+</script>
+
+<!-- validation for generate ranking facts when click-->
+<script type="text/javascript" language="javascript">
+    // also check for multiple updates of parameters
+    // based on comparasion between current ckecked atts and server-side record selected atts
+    var choosed_atts_ids = {{passed_ranked_atts_ids | safe}};
+    var checked_sensi_atts_ids = {{passed_checked_sensi_ids |safe}};
+    var checked_cate_atts_ids = {{passed_checked_cate_atts_ids |safe}};
+    var enter_paras={{passed_atts_json | safe}};
+    // get current checked boxes
+    var num_att_ids = {{passed_num_atts_ids | safe}};
+    var binary_att_ids = {{passed_binary_ids | safe}};
+    var cate_att_ids = {{passed_cate_ids | safe}};
+
+
+    function validateRankPreview() {
+        var checked_atts_ids = [];
+        for (i in num_att_ids) {
+            var cur_checks_id = num_att_ids[i]+"_checks";
+            var cur_checked_att = document.getElementById(cur_checks_id).checked;
+            if (cur_checked_att == true) {
+                checked_atts_ids.push(num_att_ids[i]);
+            }
+        }
+        // get current checked binary atts
+        var cur_checked_binary_atts_ids = [];
+        for (i in binary_att_ids) {
+            var cur_checks_b_id = binary_att_ids[i]+"_sensi_checks";
+            var cur_checked_b_att = document.getElementById(cur_checks_b_id).checked;
+            if (cur_checked_b_att == true) {
+                cur_checked_binary_atts_ids.push(binary_att_ids[i]);
+            }
+        }
+        // get current checked cate atts
+        var cur_checked_cat_atts_ids = [];
+        for (i in cate_att_ids) {
+            var cur_checks_c_id = cate_att_ids[i]+"_cate_checks";
+            var cur_checked_c_att = document.getElementById(cur_checks_c_id).checked;
+            if (cur_checked_c_att == true) {
+                cur_checked_cat_atts_ids.push(cate_att_ids[i]);
+            }
+        }
+        // no submission ever so no choosed atts
+        var non_update_att_flag = true;
+        var non_update_binary_att_flag = true;
+        var non_update_cate_att_flag = true;
+        // flag for update order and weight of choosed attributes
+        var non_order_click_flag = true;
+        var non_weight_update_flag = true;
+        // flag for add new attributes
+        non_update_att_flag = arraysEqual(checked_atts_ids,choosed_atts_ids);
+        non_update_binary_att_flag = arraysEqual(cur_checked_binary_atts_ids,checked_sensi_atts_ids);
+        non_update_cate_att_flag = arraysEqual(cur_checked_cat_atts_ids,checked_cate_atts_ids);
+
+        if (choosed_atts_ids != false){ // check current choosed att and passed att and order of them
+            for (i in choosed_atts_ids){
+                var cur_order_att = document.getElementById(choosed_atts_ids[i]+"_order").value;
+                var cur_weight_att = document.getElementById(choosed_atts_ids[i]+"_weight").value;
+                var passed_att_order = enter_paras[choosed_atts_ids[i]]["order"];
+                var passed_att_weight = enter_paras[choosed_atts_ids[i]]["weight"];
+                if (cur_weight_att != passed_att_weight){
+                    non_weight_update_flag = false;
+                }
+                if (cur_order_att != passed_att_order){
+                    non_order_click_flag = false;
+                }
+            }
+        }
+        //for ranking atts
+        if (choosed_atts_ids == false || non_update_att_flag == false) {
+            if (choosed_atts_ids == false){
+                alert('Click Preview Ranking before generate ranking facts!');
+            }
+            else{
+                alert('Click Preview Ranking after updating ranking parameters!');
+            }
+            return false;
+        }
+        //for binary atts
+        if (checked_sensi_atts_ids == false || non_update_binary_att_flag == false) {
+            if (checked_sensi_atts_ids == false){
+                alert('Click Preview Ranking before generate ranking facts!');
+            }
+            else{
+                alert('Click Preview Ranking after updating binary attributes!');
+            }
+            return false;
+        }
+        //for cate atts
+        if (checked_cate_atts_ids == false || non_update_cate_att_flag == false) {
+            if (checked_cate_atts_ids == false){
+                alert('Click Preview Ranking before generate ranking facts!');
+            }
+            else{
+                alert('Click Preview Ranking after updating categorical attributes!');
+            }
+            return false;
+        }
+        // ranking atts details
+        if (non_order_click_flag== false || non_weight_update_flag == false){
+            alert('Click Preview Ranking after updating ranking parameters!');
+            return false;
+        }
+        // go to result page, i.e. nutrition facts
+        return true;
+    }
+</script>
+<!-- validation for rank preview function when submit parameters-->
+<script type="text/javascript" language="javascript">
+    // validation check when click ranking preview
+    var num_att_ids = {{passed_num_atts_ids | safe}};
+    var binary_att_ids = {{passed_binary_ids | safe}};
+    var cate_att_ids = {{passed_cate_ids | safe}};
+
+    function validateInputAtt() {
+        var choose_att_flag = "false";
+        for (i in num_att_ids) {
+           var checks_id = num_att_ids[i] + "_checks";
+           var input_weight = document.getElementById(num_att_ids[i]+"_weight").value;
+
+           if (document.getElementById(checks_id).checked) {
+                var parsed_weight = parseFloat(input_weight);
+                if (isNaN(parsed_weight) && input_weight!=""){
+                    alert("You must specify the numerical weight if choose to include the attribute into ranking! (Default weight is 1.0 if leave empty)");
+                    return false;
+                }
+               choose_att_flag = "true";
+           }
+        }
+        if (choose_att_flag=="false") {
+            alert('You need to specify at least one attribute to include in the ranking function!');
+            return false;
+        }
+
+        // validation of fairness checkboxes when click ranking preview
+        var choose_sensi_att_flag = "false";
+        for (i in binary_att_ids) {
+           var checks_sensi_id = binary_att_ids[i] + "_sensi_checks";
+
+           if (document.getElementById(checks_sensi_id).checked) {
+               choose_sensi_att_flag = "true";
+           }
+        }
+        if (choose_sensi_att_flag=="false") {
+            alert('You need to choose at least one binary attribute for fairness check!');
+            return false;
+        }
+        // validation of diversity checkboxes when click ranking preview
+        var choose_cate_att_flag = "false";
+        for (i in cate_att_ids) {
+           var checks_cate_id = cate_att_ids[i] + "_cate_checks";
+
+           if (document.getElementById(checks_cate_id).checked) {
+               choose_cate_att_flag = "true";
+           }
+        }
+        if (choose_cate_att_flag=="false") {
+            alert('You need to choose at least one categorical attribute for diversity check!');
+            return false;
+        }
+        return true;
+    }//end of validation function
+</script>
+<!-- update users' input parameters after user click ranking preview-->
+<script type="text/javascript" language="javascript">
+    var enter_paras={{passed_atts_json | safe}};
+    var choosed_atts_ids = {{passed_ranked_atts_ids |safe}};
+    var checked_sensi_atts_ids = {{passed_checked_sensi_ids |safe}};
+    var checked_cate_atts_ids = {{passed_checked_cate_atts_ids |safe}};
+
+    $(document).ready(function () {
+        if (enter_paras){
+            for (i in choosed_atts_ids) {
+                var att_weight = enter_paras[choosed_atts_ids[i]]["weight"];
+                var att_order = enter_paras[choosed_atts_ids[i]]["order"];
+                document.getElementById(choosed_atts_ids[i]+"_weight").value = att_weight;
+                document.getElementById(choosed_atts_ids[i]+"_order").value = att_order;
+
+                var checks_id = choosed_atts_ids[i]+"_checks";
+                document.getElementById(checks_id).checked = true;
+                document.getElementById(choosed_atts_ids[i] + "_para").style.display = 'inline';
+
+            }
+            //check the binary sensitive atts
+            for (i in checked_sensi_atts_ids) {
+                var sensi_checks_id = checked_sensi_atts_ids[i]+"_sensi_checks";
+                document.getElementById(sensi_checks_id).checked = true;
+            }
+            // check the categorical sensitive atts
+            for (i in checked_cate_atts_ids) {
+                var cate_checks_id = checked_cate_atts_ids[i]+"_cate_checks";
+                document.getElementById(cate_checks_id).checked = true;
+            }
+            //show the generated score div
+            document.getElementById("generated_score_div").style.display = 'inline';
+
+        }
+    });
+</script>
+<!-- uploaded data table -->
+<script type="text/javascript" language="javascript">
+    $(document).ready(function () {
+        $('#proc_data_table').dataTable({
+            ajax: {
+                "url": "{% url 'rankingfacts:norm_json_processing_data' %}",
+                "dataSrc": ""
+            },
+            columns: {{passed_json_columns | safe}},
+            columnDefs: {{passed_json_columns_header | safe}},
+            order: [[ 0, "asc" ]],
+            scrollX: true,
+        });
+    });
+</script>
+
+<!-- generated ranking data table -->
+<script type="text/javascript" language="javascript">
+    $(document).ready(function () {
+        $('#ranking_table').dataTable({
+            ajax: {
+                "url": "{% url 'rankingfacts:norm_json_generate_ranking' %}",
+                "dataSrc": ""
+            },
+            columns: {{passed_json_ranks | safe}},
+            columnDefs: {{passed_json_ranks_header | safe}},
+            order: [[ 0, "desc" ]],
+            scrollX: true,
+        });
+    });
+</script>
+<!-- display weight and order parameters panel-->
+<script type="text/javascript" language="javascript">
+    var num_att_ids = {{passed_num_atts_ids | safe}};
+    $('input[type="checkbox"]').click(function () {
+        for (i in num_att_ids) {
+           var checks_id = num_att_ids[i] + "_checks";
+           if (document.getElementById(checks_id).checked) {
+               document.getElementById(num_att_ids[i] + "_para").style.display = 'inline';
+           }
+           else {
+               document.getElementById(num_att_ids[i] + "_para").style.display = 'none';
+           }
+        }
+    });
+</script>
+
+<!-- select att drop down list for distribution-->
+<script type="text/javascript" language="javascript">
+    var all_att_names = {{passed_column_name | safe}};
+    $(document).ready(function () {
+        document.getElementById(all_att_names[0]+"_distribution").style.display = 'inline';
+        $('#att_select a:first').addClass("active");
+        $(function () {
+            $('.list-group a').click(function(e) {
+                e.preventDefault();
+                $that = $(this);
+
+                $('.list-group').find('a').removeClass('active');
+                $that.addClass('active');
+                var all_items = document.getElementsByClassName("list-group-item list-group-item-action");
+                for (var i = 0; i < all_items.length; i++) {
+                   if ((' ' + all_items[i].className + ' ').indexOf(' active ') > -1) {
+                        document.getElementById(all_att_names[i]+"_distribution").style.display = 'inline';
+                   }
+                   else{
+                       document.getElementById(all_att_names[i]+"_distribution").style.display = 'none';
+                   }
+                }
+            });
+        });
+    });
+
+
+</script>
+
+<!-- histogram plot of all attributes-->
+<script type="text/javascript" language="javascript">
+    var cate_atts = {{passed_cate_atts | safe}};
+    var drawable_att_list = {{drawable_atts | safe}};
+    var chartUrl = "{% url 'rankingfacts:norm_json_processing_hist' %}";
+
+    $(document).ready(function () {
+        $.getJSON(chartUrl, function (data) {
+            for (coli in drawable_att_list) {
+
+                var col_i_name = drawable_att_list[coli];
+
+                var title_text_before = 'Distribution of ' + col_i_name ;
+
+                if (cate_atts.includes(col_i_name)) {
+                    //draw bar chart here
+                    var before_barchart_name = col_i_name + "_barchart";
+                    Highcharts.chart(before_barchart_name, {
+                        chart: {
+                            type: 'column'
+                        },
+                        title: {
+                            text: title_text_before
+                        },
+                        xAxis: {
+                            categories: data["barchart"][col_i_name]["bins"],
+                            crosshair: true,
+                            labels: {
+                                style: {
+                                    fontSize: '20px'
+                                }
+                            }
+                        },
+                        yAxis: {
+                            min: 0,
+                            title: {
+                                text: 'Count',
+                                style: {
+                                    fontSize: '18px'
+                                }
+                            },
+                            labels: {
+                                style: {
+                                    fontSize: '20px'
+                                }
+                            }
+                        },
+                        plotOptions: {
+                            column: {
+                                pointPadding: 0.2,
+                                borderWidth: 0
+                            }
+                        },
+                        series: [{
+                            name: col_i_name,
+                            data: data["barchart"][col_i_name]["counts"]
+
+                        }],
+                        legend: {
+                            itemStyle: {
+                                fontSize: '18px'
+                            }
+                        }
+                    });
+
+                }
+                else {
+                    //draw distogram here
+                    var before_hist_name = col_i_name + "_histogram";
+
+                    Highcharts.chart(before_hist_name, {
+                        chart: {
+                            type: 'column'
+                        },
+                        title: {
+                            text: title_text_before
+                        },
+                        xAxis: {
+                            gridLineWidth: 1,
+                            labels: {
+                                style: {
+                                    fontSize: '20px'
+                                }
+                            }
+                        },
+                        yAxis: [{
+                            title: {
+                                text: 'Count',
+                                style: {
+                                    fontSize: '18px'
+                                }
+                            },
+                            labels: {
+                                style: {
+                                    fontSize: '18px'
+                                }
+                            }
+                        }],
+                        series: [{
+                            name: col_i_name,
+                            type: 'column',
+                            data: data['histogram'][col_i_name],
+                            pointPadding: 0,
+                            groupPadding: 0,
+                            pointPlacement: 'between',
+                        }],
+                        legend: {
+                            itemStyle: {
+                                fontSize: '18px'
+                            }
+                        }
+                    });
+
+                } //end of else
+
+            }//end of for
+        }); //end of getJson
+    }); //end of ready function
+
+</script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+<!-- Bootstrap Select JavaScript -->
+<script src="{% static 'bootstrap-parameter/js/bootstrap-select.min.js' %}"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="{% static 'bootstrap-parameter/js/bootstrap.bundle.min.js' %}"></script>
+
+</body>
+

@@ -1,0 +1,141 @@
+
+{% load static %}
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+<meta name="description" content="parameter_original">
+<meta name="author" content="keyang">
+<link href="{% static 'icons/frontpage/favicon.ico' %}" rel="shortcut icon"/>
+<link href="{% static 'bootstrap/css/bootstrap.min-4.0.0.css' %}" rel="stylesheet">
+<link href="{% static 'frontpage/css/upload_data.css' %}" rel="stylesheet" type="text/css"/>
+<link href="{% static 'bootstrap-fileinput/css/fileinput.min.css' %}" media="all" rel="stylesheet" type="text/css"/>
+<link href="{% static 'font-awesome-4.7.0/css/font-awesome.min.css' %}" media="all" rel="stylesheet" type="text/css"/>
+<link href="{% static 'bootstrap-fileinput/themes/explorer-fa/theme.css' %}" media="all" rel="stylesheet" type="text/css"/>
+
+<script src="{% static 'jquery/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'bootstrap-fileinput/js/fileinput.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'bootstrap-fileinput/themes/explorer-fa/theme.js' %}" type="text/javascript"></script>
+<script src="{% static 'bootstrap-fileinput/themes/fa/theme.js' %}" type="text/javascript"></script>
+<script src="{% static 'ajax/js/popper.min-1.11.0.js' %}" type="text/javascript"></script>
+<script src="{% static 'bootstrap/js/bootstrap.min-4.0.0.js' %}" type="text/javascript"></script>
+
+
+</head>
+
+<body>
+<nav class="navbar navbar-light bg-light navbar-static-top" role="navigation">
+
+    <a class="navbar-brand" href="{% url 'rankingfacts:base' %}">
+        <ul class="nav navbar-top-links navbar-left">
+            <li>
+                 <div class="title-ranking">
+                    Ranking
+                </div>
+            </li>
+            <li>
+                <div class="title-facts">
+                    Facts
+                </div>
+            </li>
+        </ul>
+    </a>
+
+    <ul class="nav navbar-top-links navbar-right">
+        <li class="nav-item">
+          <a class="nav-link" href="https://dataresponsibly.github.io/">
+              <div class="title-about">About</div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://dataresponsibly.github.io/people/">
+              <div class="title-contact">Contact</div>
+          </a>
+        </li>
+    </ul>
+    <!-- /.navbar-top-links -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <span><br><br></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h3 class="page-header">Load your data</h3>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <span><br></span>
+        </div>
+    </div>
+
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-1 col-sm-2 col-xs-3"><span><br></span></div>
+        <div class="col-lg-3 col-md-4 col-sm-10 col-xs-9">
+            <div class="list-group" id="mode_choose">
+                 <a class="list-group-item list-group-item-action active" href="{% url 'rankingfacts:upload_data'%}"><i class="fa fa-file-text-o fa-fw fa-1x"></i> Upload a file</a>
+                 <span><br></span>
+                 <a class="list-group-item list-group-item-action" href="{% url 'rankingfacts:sample_data' %}"> <i class="fa fa-table fa-fw fa-1x"></i> Try our samples</a>
+            </div>
+        </div>
+        <div class="d-lg-none col-lg-12"><span><br><br><br></span></div>
+
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12" style="height:300px">
+            <form method="post" enctype="multipart/form-data">{% csrf_token %}
+                <input id="file_upload" name="user_upload_data" class="file" type="file" accept="text/csv">
+            </form>
+            <span><br></span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <span><br><br><br><br><br></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-xs-12">
+            <span><br></span>
+        </div>
+        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12" style="background-color: whitesmoke">
+            <h6> You can upload a .CSV file.  Click <a href="{% static 'metadata/CSranking_faculty30.csv' %}">here</a> to view our samples and see what their .CSV looks like.</h6>
+
+        </div>
+    </div>
+
+
+</div>
+<!-- /.container -->
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <span><br><br><br><br><br></span>
+    </div>
+</div>
+<!-- Footer -->
+<footer class="py-5 bg-white">
+  <div class="container">
+    <p class="m-0 text-center text-dark">
+        © 2018 <a href="https://dataresponsibly.github.io/">Data Responsibly</a> | <a href="https://github.com/DataResponsibly/RankingFacts">Code</a>  | <a href="https://dataresponsibly.github.io/people/">Contact us</a>
+    </p>
+  </div>
+  <!-- /.container -->
+</footer>
+
+<script>
+    $("#file_upload").fileinput({
+        theme: 'fa',
+        allowedFileExtensions: ['csv'],
+        overwriteInitial: false,
+        maxFileSize: 50000,
+        maxFilesNum: 1,
+    });
+</script>
+</body>
+
