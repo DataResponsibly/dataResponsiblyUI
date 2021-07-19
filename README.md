@@ -1,2 +1,28 @@
 # dataResponsiblyUI
-A Django project for the Web UIs of the Data, Resposibly.
+A Django project for the Web UIs of the Data, Resposibly, including
+
+- DataSynthesizer (https://github.com/DataResponsibly/DataSynthesizer)
+- RankingFacts (https://github.com/DataResponsibly/RankingFacts)
+
+## Visit online demo
+
+You may also visit our online demo for [DataSynthesizer](https://dataresponsibly.enginnering.nyu.edu/synthesizer) and [RankingFacts](https://dataresponsibly.enginnering.nyu.edu/rankingfacts).
+
+## Run the Web UIs locally
+
+1. Install [Anaconda](https://www.anaconda.com/) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html).
+2. Download this repository and unzip it to your local machine.
+3. Use the following command to initiate the environment.
+
+```
+cd LOCAL_FOLDER/dataResponsiblyUI
+conda env create -f environment.yml
+conda activate dataResponsiblyUI
+python manage.py runserver
+```
+
+Then you can access in the browser
+
+- DataSynthesizer at http://127.0.0.1:8000/synthesizer
+- RankingFacts at http://127.0.0.1:8000/rankingfacts
+
