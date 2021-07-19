@@ -3,40 +3,8 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - asgiref=3.4.1=pyhd8ed1ab_0
-  - ca-certificates=2021.5.30=h033912b_0
-  - certifi=2021.5.30=py37hf985489_0
-  - django=3.2.5=pyhd8ed1ab_0
-  - libcxx=12.0.1=habf9029_0
-  - libffi=3.3=h046ec9c_2
-  - ncurses=6.2=h2e338ed_4
-  - openssl=1.1.1k=h0d85af4_0
-  - pip=21.1.3=pyhd8ed1ab_0
-  - python=3.7.10=h7728216_100_cpython
-  - python_abi=3.7=2_cp37m
-  - pytz=2021.1=pyhd8ed1ab_0
-  - readline=8.1=h05e3726_0
-  - setuptools=49.6.0=py37hf985489_3
-  - sqlite=3.36.0=h23a322b_0
-  - sqlparse=0.4.1=pyh9f0ad1d_0
-  - tk=8.6.10=h0419947_1
-  - typing_extensions=3.10.0.0=pyha770c72_0
-  - wheel=0.36.2=pyhd3deb0d_0
-  - xz=5.2.5=haf1e3a3_1
-  - zlib=1.2.11=h7795811_1010
+  - python=3.7
+  - django=3.2.5
+  - pip=21.1.3
   - pip:
-    - cycler==0.10.0
-    - datasynthesizer==0.1.9
-    - joblib==1.0.1
-    - kiwisolver==1.3.1
-    - matplotlib==3.4.2
-    - numpy==1.21.1
-    - pandas==1.3.0
-    - pillow==8.3.1
-    - pyparsing==2.4.7
-    - python-dateutil==2.8.2
-    - scikit-learn==0.24.2
-    - scipy==1.7.0
-    - seaborn==0.11.1
-    - six==1.16.0
-    - threadpoolctl==2.2.0
+    - DataSynthesizer==0.1.9
