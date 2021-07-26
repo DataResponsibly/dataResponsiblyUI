@@ -607,7 +607,7 @@ def generateRanking(current_file,top_K=100):
     for i in range(len(chosed_atts)):
         cur_weight = rankings_paras["ranked_atts_weight"][i]
         filled_data["GeneratedScore"] += cur_weight * filled_data[chosed_atts[i]]
-    filled_data = filled_data.reindex_axis(['GeneratedScore'] + list([a for a in filled_data.columns if a != 'GeneratedScore']), axis=1)
+    filled_data = filled_data.reindex(['GeneratedScore'] + list([a for a in filled_data.columns if a != 'GeneratedScore']), axis=1)
     # save data with weight sum to a csv on server
     filled_data.sort_values(by="GeneratedScore",ascending=False,inplace=True)
     filled_data.to_csv(current_file+"_weightsum.csv", index=False)
