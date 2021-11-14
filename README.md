@@ -4,10 +4,6 @@ A Django project for the Web UIs of the Data, Responsibly, including
 - DataSynthesizer (https://github.com/DataResponsibly/DataSynthesizer)
 - RankingFacts (https://github.com/DataResponsibly/RankingFacts)
 
-## Visit online demo
-
-You may also visit our online demo for [DataSynthesizer](https://dataresponsibly.enginnering.nyu.edu/synthesizer) and [RankingFacts](https://dataresponsibly.enginnering.nyu.edu/rankingfacts).
-
 ## Run the Web UIs locally
 
 1. Install [Anaconda](https://www.anaconda.com/) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html).
